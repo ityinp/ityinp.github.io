@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com</id>
+    <title>Gridea</title>
+    <updated>2021-07-30T07:24:56.847Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com"/>
+    <link rel="self" href="https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/images/avatar.png</logo>
+    <icon>https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/favicon.ico</icon>
+    <rights>All rights reserved 2021, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[异常：Data truncation: Incorrect string value: 'xxx' for column 'NAME' at row 1]]></title>
+        <id>https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post/yi-chang-data-truncation-incorrect-string-value-xxx-for-column-name-at-row-1/</id>
+        <link href="https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post/yi-chang-data-truncation-incorrect-string-value-xxx-for-column-name-at-row-1/">
+        </link>
+        <updated>2021-07-30T06:16:52.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="异常data-truncation-incorrect-string-value-xxx-for-column-name-at-row-1">异常：Data truncation: Incorrect string value: 'xxx' for column 'NAME' at row 1</h3>
+<h4 id="修改字符集为uft8mb4">修改字符集为：uft8mb4</h4>
+<h4 id="原因插入的数据中存在特殊字符串-大概是特殊字符串的字节在数据库不兼容造成的utf8能够存下大部分中文字但mysql支持的-utf8-编码最大字符长度为-3-字节如果遇到-4-字节的宽字符就会插入异常了">原因：插入的数据中存在特殊字符串（' ? '），大概是特殊字符串的字节在数据库不兼容造成的；utf8能够存下大部分中文字，但mysql支持的 utf8 编码最大字符长度为 3 字节，如果遇到 4 字节的宽字符就会插入异常了。</h4>
+<p><img src="//qiniu.yinp.top/69ac9024-c7ad-4329-b738-d464e4e304e3" alt="image.png" loading="lazy"><br>
+<img src="//qiniu.yinp.top/8a9bd5de-daac-4c12-87dc-04b6761140d8" alt="image.png" loading="lazy"></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CentOS7忘记root密码修改root密码]]></title>
+        <id>https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post/centos7-wang-ji-root-mi-ma-xiu-gai-root-mi-ma/</id>
+        <link href="https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post/centos7-wang-ji-root-mi-ma-xiu-gai-root-mi-ma/">
+        </link>
+        <updated>2021-07-30T06:16:18.000Z</updated>
+        <content type="html"><![CDATA[<h4 id="我在虚拟机安装了cent-os7但是忘记了root密码登录的时候发现登录不上了然后重新修改密码">我在虚拟机安装了cent OS7，但是忘记了root密码，登录的时候发现登录不上了，然后重新修改密码</h4>
+<p>1、登录失败的页面<br>
+<img src="//qiniu.yinp.top/c76d5cdb-8f88-4a6e-934b-ac2b342ee4ac" alt="image.png" loading="lazy"><br>
+2、重启虚拟机，选中第一个（高亮显示即为选中）选项，然后按下键盘的“E”键<br>
+<img src="//qiniu.yinp.top/556628c6-363a-48f8-b7d4-1db15f3f8d19" alt="image.png" loading="lazy"><br>
+3、进入到初始化脚本编辑页面，该脚本有两页，用下键向下拉，直到最后两行<br>
+<img src="//qiniu.yinp.top/5169cbbf-6228-48de-ba70-2ef904510f94" alt="image.png" loading="lazy"><br>
+<img src="//qiniu.yinp.top/a945b7a5-e636-4450-ab1b-bcfea86c0266" alt="image.png" loading="lazy"><br>
+4、光标拉到最后两行需要加入一些文字<br>
+shgb后面加入下面这一行文字<br>
+rw<br>
+LANG=\zh_CN.UTF-8（我安装的是中文版的，也有可能你的是\en_US.utf-8）后面加下面这一行文字<br>
+init=/bin/sh<br>
+5、代码加完后的图<br>
+然后按ctrl+x退出<br>
+<img src="//qiniu.yinp.top/3aedfe05-bc53-4c97-a457-6a3b05b2ddca" alt="image.png" loading="lazy"><br>
+6、进入到这个页面之后（一开始只有上面那一行），表示初始化成功，然后依次输入<br>
+mount -o remount,rw /<br>
+passwd root<br>
+输入两次新的密码（密码不会直接显示出来）<br>
+touch /.autorelabel<br>
+exec /sbin/init<br>
+<img src="//qiniu.yinp.top/40b49a09-e996-4920-8449-426bca9700c1" alt="image.png" loading="lazy"></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[vue element 动态表格]]></title>
+        <id>https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post/vue-element-dong-tai-biao-ge/</id>
+        <link href="https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post/vue-element-dong-tai-biao-ge/">
+        </link>
+        <updated>2021-07-30T06:15:30.000Z</updated>
+        <content type="html"><![CDATA[<pre><code>&lt;template&gt;
+    &lt;el-table :data=&quot;tableData&quot; border style=&quot;width: 100%&quot; size=&quot;mini&quot;&gt;
+        &lt;el-table-column v-for=&quot;item in table_key_value&quot; :property=&quot;item.key&quot; :label=&quot;item.key&quot; :key=&quot;item.key&quot;&gt;
+            &lt;template slot-scope=&quot;scope&quot;&gt;
+                &lt;el-input v-model=&quot;scope.row[scope.column.property]&quot; style=&quot;width: 100%;&quot; /&gt;
+            &lt;/template&gt;
+        &lt;/el-table-column&gt;
+    &lt;/el-table&gt;
+&lt;/template&gt;
+</code></pre>
+<p><img src="//qiniu.yinp.top/de984088-2108-49e0-bd72-a1e11680fe12" alt="image.png" loading="lazy"><br>
+<img src="//qiniu.yinp.top/224f04c3-ee16-4647-bb5f-b797339bb1cc" alt="image.png" loading="lazy"><br>
+<img src="//qiniu.yinp.top/c98c69bd-1812-41ad-bb3c-a20f83bd97db" alt="image.png" loading="lazy"></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[mysql 设置忽略大小写]]></title>
+        <id>https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post/mysql-she-zhi-hu-lue-da-xiao-xie/</id>
+        <link href="https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post/mysql-she-zhi-hu-lue-da-xiao-xie/">
+        </link>
+        <updated>2021-07-30T06:14:27.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="1用root登录修改etcmycnf">1.用ROOT登录，修改/etc/my.cnf</h3>
+<h3 id="2在mysqld下加入一行">2.在[mysqld]下加入一行：</h3>
+<p><code>lower_case_table_names=1</code></p>
+<h3 id="3重新启动数据库即可">3.重新启动数据库即可。</h3>
+<figure data-type="image" tabindex="1"><img src="//qiniu.yinp.top/b196a6da-a862-4400-846d-37aab3847c5b" alt="image.png" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Java Word转pdf]]></title>
+        <id>https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post/java-word-zhuan-pdf/</id>
+        <link href="https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post/java-word-zhuan-pdf/">
+        </link>
+        <updated>2021-07-30T06:13:12.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="jar包下载地址">jar包下载地址</h3>
+<p><a href="//qiniu.yinp.top/jacob.jar">jacob.jar</a></p>
+<h3 id="动态链接库复制到jdk-bin目录下">动态链接库复制到JDK bin目录下</h3>
+<p><a href="//qiniu.yinp.top/jacob-1.18-x64.dll">jacob-1.18-x64.dll</a></p>
+<pre><code class="language-java">public static void main(String args[]) {
+    ActiveXComponent app = null;
+    String wordFile = &quot;C:\\Users\\yinp\\Desktop\\1.doc&quot;;
+    String pdfFile = &quot;d:/个人成长规划报告.pdf&quot;;
+    System.out.println(&quot;开始转换...&quot;);
+    // 开始时间
+    long start = System.currentTimeMillis();
+    try {
+        // 打开word
+        app = new ActiveXComponent(&quot;Word.Application&quot;);
+        // 设置word不可见,很多博客下面这里都写了这一句话，其实是没有必要的，因为默认就是不可见的，如果设置可见就是会打开一个word文档，对于转化为pdf明显是没有必要的
+        // app.setProperty(&quot;Visible&quot;, false);
+        // 获得word中所有打开的文档
+        Dispatch documents = app.getProperty(&quot;Documents&quot;).toDispatch();
+        System.out.println(&quot;打开文件: &quot; + wordFile);
+        // 打开文档
+        Dispatch document = Dispatch.call(documents, &quot;Open&quot;, wordFile, false, true).toDispatch();
+        // 如果文件存在的话，不会覆盖，会直接报错，所以我们需要判断文件是否存在
+        File target = new File(pdfFile);
+        if (target.exists()) {
+            target.delete();
+        }
+        System.out.println(&quot;另存为: &quot; + pdfFile);
+        // 另存为，将文档报错为pdf，其中word保存为pdf的格式宏的值是17
+        Dispatch.call(document, &quot;SaveAs&quot;, pdfFile, 17);
+        // 关闭文档
+        Dispatch.call(document, &quot;Close&quot;, false);
+        // 结束时间
+        long end = System.currentTimeMillis();
+        System.out.println(&quot;转换成功，用时：&quot; + (end - start) + &quot;ms&quot;);
+    } catch (Exception e) {
+        System.out.println(&quot;转换失败&quot; + e.getMessage());
+    } finally {
+        // 关闭office
+        app.invoke(&quot;Quit&quot;, 0);
+    }
+}
+
+</code></pre>
+<figure data-type="image" tabindex="1"><img src="//qiniu.yinp.top/e8a797b8-625e-4274-87b2-62a530ace71b" alt="image.png" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[vue页面加载时的进度条功能]]></title>
+        <id>https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post/vue-ye-mian-jia-zai-shi-de-jin-du-tiao-gong-neng/</id>
+        <link href="https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post/vue-ye-mian-jia-zai-shi-de-jin-du-tiao-gong-neng/">
+        </link>
+        <updated>2021-07-30T06:12:07.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="安装">安装</h2>
+<pre><code class="language-javascript">cnpm install --save nprogress
+</code></pre>
+<h2 id="引入">引入</h2>
+<h3 id="在路由配置文件中引入写到路由加载前和加载后的两个钩子函数中">在路由配置文件中引入，写到路由加载前和加载后的两个钩子函数中</h3>
+<pre><code class="language-javascript">// 引入
+import NProgress from 'nprogress';
+import 'nprogress/nprogress.css';
+// 进度条配置项这样写
+NProgress.configure({
+ showSpinner: false
+});
+// 路由跳转前钩子函数中 - 执行进度条开始加载
+router.beforeEach((to, from, next) =&gt; {
+ NProgress.start();
+});
+// 路由跳转后钩子函数中 - 执行进度条加载结束
+router.afterEach(() =&gt; {
+ NProgress.done();
+});
+</code></pre>
+<h3 id="如果是-cdn-引入的话如下">如果是 cdn 引入的话，如下</h3>
+<pre><code class="language-javascript">&lt;script src='nprogress.js'&gt;&lt;/script&gt;
+&lt;link rel='stylesheet' href='nprogress.css'/&gt;
+</code></pre>
+<h2 id="设置进度条颜色"><code>设置进度条颜色</code></h2>
+<h3 id="如果是一般的-vue-项目把样式放到一个css文件中在项目主文件mainjs中引入下面是-css-样式">如果是一般的 vue 项目，把样式放到一个css文件中，在项目主文件main.js中引入，下面是 css 样式</h3>
+<pre><code class="language-javascript">#nprogress .bar {
+ background: #00CC00 !important; //自定义颜色
+}
+</code></pre>
+<h2 id="配置项"><code>配置项</code></h2>
+<h3 id="手动控制进度条递增参数范围是0-1不传参数的话每次调用都会随机递增但永远不会到达-100-除非调用nprogressdone">手动控制进度条递增，参数范围是0 - 1，不传参数的话，每次调用都会随机递增，但永远不会到达 100% ，除非调用NProgress.done();</h3>
+<pre><code class="language-javascript">// 调用之前如果进度条的状态 50%
+NProgress.inc(0.2);
+// 调用之后 70%
+</code></pre>
+<h2 id="进度条加载完成"><code>进度条加载完成</code></h2>
+<h3 id="带参数true即使没有调用nprogressstart也会显示并执行进度条从-0-100-的状态然后消失">带参数true：即使没有调用NProgress.start()，也会显示并执行进度条从 0% - 100% 的状态，然后消失。</h3>
+<p>不带参数：如果没有调用NProgress.start()，那么此命令不会执行任何操作。</p>
+<pre><code class="language-javascript">NProgress.done(true);
+</code></pre>
+<h3 id="启动进度条时的最小百分比默认为-008">启动进度条时的最小百分比（默认为 0.08）</h3>
+<pre><code class="language-javascript">NProgress.configure({
+ minimum: 0.3
+});
+</code></pre>
+<h3 id="可以使用模板更改标记-要保持进度条正常工作要在其中保留一个rolebar元素参考默认模板">可以使用模板更改标记。要保持进度条正常工作，要在其中保留一个role='bar'元素，参考默认模板。</h3>
+<pre><code class="language-javascript">// 默认模板
+NProgress.configure({
+ template: &quot;&lt;div class='....'&gt;...&lt;/div&gt;&quot;
+});
+ 
+// 举例
+NProgress.configure({
+ template: &quot;&lt;div class='other-instance'&gt;&lt;div role='bar'&gt;更改标记&lt;/div&gt;&lt;/div&gt;&quot;
+})
+</code></pre>
+<h3 id="使用-easing-和-speed-调整动画设置ease可传递css3缓冲动画字符串如ease-linear-ease-in-ease-out-ease-in-out-cubic-bezierspeed为动画速度单位ms-默认分别为-ease-200">使用 easing 和 speed 调整动画设置，ease可传递CSS3缓冲动画字符串（如ease、linear、ease-in、ease-out、ease-in-out、cubic-bezier），speed为动画速度（单位ms）。默认分别为 ease 200</h3>
+<pre><code class="language-javascript">NProgress.configure({
+ easing: 'ease',
+ speed: 200
+});
+</code></pre>
+<h3 id="关闭自动递增行为">关闭自动递增行为</h3>
+<pre><code class="language-javascript">NProgress.configure({
+ trickle: false
+});
+</code></pre>
+<h3 id="调整递增的频率单位为毫秒">调整递增的频率，单位为毫秒</h3>
+<pre><code class="language-javascript">NProgress.configure({
+ trickleSpeed: 200
+});
+</code></pre>
+<h3 id="关闭微调器默认为开启状态上图中右上角的那个圆圈加载图标">关闭微调器，默认为开启状态（上图中右上角的那个圆圈加载图标）</h3>
+<pre><code class="language-javascript">NProgress.configure({
+ showSpinner: false,
+});
+</code></pre>
+<h3 id="更改父容器">更改父容器</h3>
+<pre><code class="language-javascript">NProgress.configure({
+ parent:'#container'
+});
+</code></pre>
+<h2 id="配置文件">配置文件</h2>
+<pre><code class="language-javascript">NProgress.configure({     
+  easing: 'ease',  // 动画方式    
+  speed: 500,  // 递增进度条的速度    
+  showSpinner: false, // 是否显示加载ico    
+  trickleSpeed: 200, // 自动递增间隔    
+  minimum: 0.3 // 初始化时的最小百分比
+})
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[vue发布到nginx刷新页面404，以及跳转页面重定向到首页]]></title>
+        <id>https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post/vue-fa-bu-dao-nginx-shua-xin-ye-mian-404yi-ji-tiao-zhuan-ye-mian-chong-ding-xiang-dao-shou-ye/</id>
+        <link href="https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post/vue-fa-bu-dao-nginx-shua-xin-ye-mian-404yi-ji-tiao-zhuan-ye-mian-chong-ding-xiang-dao-shou-ye/">
+        </link>
+        <updated>2021-07-30T06:11:30.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="解决方法">解决方法</h3>
+<h4 id="server里增加加一下代码">server里增加加一下代码</h4>
+<pre><code class="language-java">location @router {
+  rewrite ^.*$ /index.html last;
+}
+</code></pre>
+<h4 id="location-里增加如下代码">location /里增加如下代码</h4>
+<pre><code class="language-javascript">try_files $uri $uri/ @router;
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[利用openvpn异地组网，连接公司内网，非局域网多人游戏联机]]></title>
+        <id>https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post/li-yong-openvpn-yi-di-zu-wang-lian-jie-gong-si-nei-wang-fei-ju-yu-wang-duo-ren-you-xi-lian-ji/</id>
+        <link href="https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post/li-yong-openvpn-yi-di-zu-wang-lian-jie-gong-si-nei-wang-fei-ju-yu-wang-duo-ren-you-xi-lian-ji/">
+        </link>
+        <updated>2021-07-30T06:10:25.000Z</updated>
+        <content type="html"><![CDATA[<p>1.【安装git】</p>
+<pre><code>yum -y install git
+</code></pre>
+<p>2.【下载openvpn安装项目】</p>
+<pre><code>git clone https://github.com/Nyr/openvpn-install
+</code></pre>
+<p>3.【使用bash运行安装程序】</p>
+<pre><code>bash openvpn-install.sh
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[360极速浏览器打开自动开启全屏模式（其他浏览器自测）]]></title>
+        <id>https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post/360-ji-su-liu-lan-qi-da-kai-zi-dong-kai-qi-quan-ping-mo-shi-qi-ta-liu-lan-qi-zi-ce/</id>
+        <link href="https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post/360-ji-su-liu-lan-qi-da-kai-zi-dong-kai-qi-quan-ping-mo-shi-qi-ta-liu-lan-qi-zi-ce/">
+        </link>
+        <updated>2021-07-30T06:09:31.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="//qiniu.yinp.top/8c9abcd8-7f3c-416a-90d3-5d502542a2e6" alt="Description" loading="lazy"></figure>
+<h4 id="在目标地址后面加入代码">在目标地址后面加入代码</h4>
+<pre><code>-kiosk 
+</code></pre>
+<h4 id="左右需要加空格">左右需要加空格</h4>
+<h4 id="后面双引号里写需要全屏打开后加载的地址">后面双引号里写需要全屏打开后加载的地址</h4>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[springBoot整合MySQL+MyBatis]]></title>
+        <id>https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post/springboot-zheng-he-mysqlmybatis/</id>
+        <link href="https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post/springboot-zheng-he-mysqlmybatis/">
+        </link>
+        <updated>2021-07-30T06:08:25.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="mysql依赖">MySql依赖</h2>
+<pre><code>&lt;!-- mysql --&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-boot-starter-jdbc&lt;/artifactId&gt;
+&lt;/dependency&gt;
+&lt;!-- 注意jar版本问题 --&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;mysql&lt;/groupId&gt;
+    &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;
+    &lt;scope&gt;runtime&lt;/scope&gt;
+&lt;/dependency&gt;
+</code></pre>
+<h2 id="mysql配置项非yml格式">MySql配置项(非yml格式)</h2>
+<pre><code>spring.datasource.username=root
+spring.datasource.password=123456
+spring.datasource.url=jdbc:mysql://localhost:3306/springboot?useUnicode=true&amp;characterEncoding=UTF8&amp;serverTimezone=UTC
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+</code></pre>
+<h2 id="mybatis依赖">MyBatis依赖</h2>
+<pre><code>&lt;!-- mybatis --&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;org.mybatis.spring.boot&lt;/groupId&gt;
+    &lt;artifactId&gt;mybatis-spring-boot-starter&lt;/artifactId&gt;
+    &lt;version&gt;1.3.2&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+<h2 id="mybatis配置项非yml格式">MyBatis配置项(非yml格式)</h2>
+<pre><code>mybatis.type-aliases-package=com.skeqi.pojo
+mybatis.mapperLocations=classpath:mappers/*.xml
+</code></pre>
+<h2 id="启动类加注解dao层的地址">启动类加注解(dao层的地址)</h2>
+<pre><code>@MapperScan(&quot;com.skeqi.dao&quot;)
+</code></pre>
+<figure data-type="image" tabindex="1"><img src="//qiniu.yinp.top/4fe68ebb-39d1-4754-ab98-a1d8ccb82684" alt="Description" loading="lazy"></figure>
+<h2 id="找到项目的-srcmainresources在这个目录下创建mappers的文件夹mapper文件就放在这下面">找到项目的 src/main/resources,在这个目录下创建mappers的文件夹，mapper文件就放在这下面；</h2>
+<h2 id="如果不想放在这下面可以修改mybatis-的配置项">如果不想放在这下面可以修改MyBatis 的配置项</h2>
+<figure data-type="image" tabindex="2"><img src="//qiniu.yinp.top/a575daba-7f9e-460d-8ab9-378796c2c794" alt="Description" loading="lazy"></figure>
+]]></content>
+    </entry>
+</feed>
