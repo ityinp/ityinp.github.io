@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com</id>
     <title>Gridea</title>
-    <updated>2021-10-25T03:00:48.507Z</updated>
+    <updated>2021-10-25T03:29:53.773Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com"/>
     <link rel="self" href="https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/atom.xml"/>
@@ -21,6 +21,8 @@
 <h4 id="原因插入的数据中存在特殊字符串-大概是特殊字符串的字节在数据库不兼容造成的utf8能够存下大部分中文字但mysql支持的-utf8-编码最大字符长度为-3-字节如果遇到-4-字节的宽字符就会插入异常了">原因：插入的数据中存在特殊字符串（' ? '），大概是特殊字符串的字节在数据库不兼容造成的；utf8能够存下大部分中文字，但mysql支持的 utf8 编码最大字符长度为 3 字节，如果遇到 4 字节的宽字符就会插入异常了。</h4>
 <p><img src="//qiniu.yinp.top/69ac9024-c7ad-4329-b738-d464e4e304e3" alt="image.png" loading="lazy"><br>
 <img src="//qiniu.yinp.top/8a9bd5de-daac-4c12-87dc-04b6761140d8" alt="image.png" loading="lazy"></p>
+<p><a href="https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post-images/jacob.jar">jacob.jar</a></p>
+<p><a href="//qiniu.yinp.top/jacob.jar">jacob11.jar</a></p>
 ]]></content>
     </entry>
     <entry>
@@ -31,12 +33,12 @@
         <updated>2021-07-30T06:16:18.000Z</updated>
         <content type="html"><![CDATA[<h4 id="我在虚拟机安装了cent-os7但是忘记了root密码登录的时候发现登录不上了然后重新修改密码">我在虚拟机安装了cent OS7，但是忘记了root密码，登录的时候发现登录不上了，然后重新修改密码</h4>
 <p>1、登录失败的页面<br>
-<img src="//qiniu.yinp.top/c76d5cdb-8f88-4a6e-934b-ac2b342ee4ac" alt="image.png" loading="lazy"><br>
+<img src="https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post-images/1635131822489.png" alt="" loading="lazy"><br>
 2、重启虚拟机，选中第一个（高亮显示即为选中）选项，然后按下键盘的“E”键<br>
-<img src="//qiniu.yinp.top/556628c6-363a-48f8-b7d4-1db15f3f8d19" alt="image.png" loading="lazy"><br>
+<img src="https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post-images/1635131827414.png" alt="" loading="lazy"><br>
 3、进入到初始化脚本编辑页面，该脚本有两页，用下键向下拉，直到最后两行<br>
-<img src="//qiniu.yinp.top/5169cbbf-6228-48de-ba70-2ef904510f94" alt="image.png" loading="lazy"><br>
-<img src="//qiniu.yinp.top/a945b7a5-e636-4450-ab1b-bcfea86c0266" alt="image.png" loading="lazy"><br>
+<img src="https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post-images/1635131831489.png" alt="" loading="lazy"><br>
+<img src="https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post-images/1635131834397.png" alt="" loading="lazy"><br>
 4、光标拉到最后两行需要加入一些文字<br>
 shgb后面加入下面这一行文字<br>
 rw<br>
@@ -44,14 +46,14 @@ LANG=\zh_CN.UTF-8（我安装的是中文版的，也有可能你的是\en_US.ut
 init=/bin/sh<br>
 5、代码加完后的图<br>
 然后按ctrl+x退出<br>
-<img src="//qiniu.yinp.top/3aedfe05-bc53-4c97-a457-6a3b05b2ddca" alt="image.png" loading="lazy"><br>
+<img src="https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post-images/1635131883418.png" alt="" loading="lazy"><br>
 6、进入到这个页面之后（一开始只有上面那一行），表示初始化成功，然后依次输入<br>
 mount -o remount,rw /<br>
 passwd root<br>
 输入两次新的密码（密码不会直接显示出来）<br>
 touch /.autorelabel<br>
 exec /sbin/init<br>
-<img src="//qiniu.yinp.top/40b49a09-e996-4920-8449-426bca9700c1" alt="image.png" loading="lazy"></p>
+<img src="https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post-images/1635131888062.png" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
     <entry>
@@ -70,9 +72,9 @@ exec /sbin/init<br>
     &lt;/el-table&gt;
 &lt;/template&gt;
 </code></pre>
-<p><img src="//qiniu.yinp.top/de984088-2108-49e0-bd72-a1e11680fe12" alt="image.png" loading="lazy"><br>
-<img src="//qiniu.yinp.top/224f04c3-ee16-4647-bb5f-b797339bb1cc" alt="image.png" loading="lazy"><br>
-<img src="//qiniu.yinp.top/c98c69bd-1812-41ad-bb3c-a20f83bd97db" alt="image.png" loading="lazy"></p>
+<p><img src="https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post-images/1635131956751.png" alt="" loading="lazy"><br>
+<img src="https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post-images/1635131959044.png" alt="" loading="lazy"><br>
+<img src="https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post-images/1635131961283.png" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
     <entry>
@@ -85,7 +87,7 @@ exec /sbin/init<br>
 <h3 id="2在mysqld下加入一行">2.在[mysqld]下加入一行：</h3>
 <p><code>lower_case_table_names=1</code></p>
 <h3 id="3重新启动数据库即可">3.重新启动数据库即可。</h3>
-<figure data-type="image" tabindex="1"><img src="//qiniu.yinp.top/b196a6da-a862-4400-846d-37aab3847c5b" alt="image.png" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="https://serverless-page-bucket-fshsekym-1259754394.cos-website.ap-guangzhou.myqcloud.com/post-images/1635131988002.png" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
