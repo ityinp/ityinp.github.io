@@ -1,7 +1,7 @@
 ﻿window.INIS = {
 
     // API地址 - 填写后端域名
-    api: 'https://www.ypit.top/api',
+    api: 'https://api.ypit.top/api',
 
     // 后端开启token验证后，需要将token填写到此处
     token: '425f340ca0ef4a95c43d5fb638052fdd',
