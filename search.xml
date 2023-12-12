@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>zabbixweb端配置主机监控</title>
+    <url>/3b635a38.html</url>
+    <content><![CDATA[<html><head></head><body><h1 id="1-创建主机"><a href="#1-创建主机" class="headerlink" title="1.创建主机"></a>1.创建主机</h1><p>•主机名称是zabbix-agent客户端里面配置的 Hostname=””</p>
+<p>•群组随便</p>
+<p>•interfaces 添加一个客户端，IP地址是zabbix-agent客户端的ip地址，端口默认10050</p>
+<p><img src="/temp/zabbixweb%E7%AB%AF%E9%85%8D%E7%BD%AE%E4%B8%BB%E6%9C%BA%E7%9B%91%E6%8E%A7/9fc632715f9013757a575ac8ae803f95_image_20231122143834A047.png" alt="9fc632715f9013757a575ac8ae803f95_image_20231122143834A047"></p>
+<h1 id="2-添加监控项"><a href="#2-添加监控项" class="headerlink" title="2.添加监控项"></a>2.添加监控项</h1><p>•刚添加主机的时候没有监控项可用性是灰色的，添加监控项后会变成绿色</p>
+<p><img src="/temp/zabbixweb%E7%AB%AF%E9%85%8D%E7%BD%AE%E4%B8%BB%E6%9C%BA%E7%9B%91%E6%8E%A7/f89fe49d049d0efe077ab8c4ff8a10ee_image_20231122144357A049.png" alt="f89fe49d049d0efe077ab8c4ff8a10ee_image_20231122144357A049"></p>
+<p><img src="/temp/zabbixweb%E7%AB%AF%E9%85%8D%E7%BD%AE%E4%B8%BB%E6%9C%BA%E7%9B%91%E6%8E%A7/c2ff14a6698f9f85a1bc8defcb5a51d8_image_20231122144246A048.png" alt="c2ff14a6698f9f85a1bc8defcb5a51d8_image_20231122144246A048"></p>
+<p>找到对应主机的‘监控项’鼠标单击，进入到监控项页面</p>
+<p><img src="/temp/zabbixweb%E7%AB%AF%E9%85%8D%E7%BD%AE%E4%B8%BB%E6%9C%BA%E7%9B%91%E6%8E%A7/24a3d8be2437996252154e2b70f6d17f_image_20231122144536A050.png" alt="24a3d8be2437996252154e2b70f6d17f_image_20231122144536A050"></p>
+<p>新增监控项-键值是对应的监控项目，更具需求选择，演示的是监控CPU使用率的</p>
+<p><img src="/temp/zabbixweb%E7%AB%AF%E9%85%8D%E7%BD%AE%E4%B8%BB%E6%9C%BA%E7%9B%91%E6%8E%A7/ca10e0d2f5a3da841416de964effa769_image_20231122144701A051.png" alt="ca10e0d2f5a3da841416de964effa769_image_20231122144701A051"></p>
+<h1 id="3-添加图形"><a href="#3-添加图形" class="headerlink" title="3.添加图形"></a>3.添加图形</h1><p>•找到对应主机的‘图形’鼠标单击，进入到监控项页面</p>
+<p><img src="/temp/zabbixweb%E7%AB%AF%E9%85%8D%E7%BD%AE%E4%B8%BB%E6%9C%BA%E7%9B%91%E6%8E%A7/0feb42e8ad38dfc5c6aea7613f56efb2_image_20231122145038A052.png" alt="0feb42e8ad38dfc5c6aea7613f56efb2_image_20231122145038A052"></p>
+<p>创建图形选择监控项为刚刚创建好的处理器使用频率监控</p>
+<p><img src="/temp/zabbixweb%E7%AB%AF%E9%85%8D%E7%BD%AE%E4%B8%BB%E6%9C%BA%E7%9B%91%E6%8E%A7/54dbce22e0df05fd33e5051c33ed483d_image_20231122145122A053.png" alt="54dbce22e0df05fd33e5051c33ed483d_image_20231122145122A053"></p>
+<h1 id="4-数据监测"><a href="#4-数据监测" class="headerlink" title="4.数据监测"></a>4.数据监测</h1><p>监测-主机，找到对应的主机单击‘图形’</p>
+<p><img src="/temp/zabbixweb%E7%AB%AF%E9%85%8D%E7%BD%AE%E4%B8%BB%E6%9C%BA%E7%9B%91%E6%8E%A7/781061895efd6d92184ea867704ebad9_image_20231122145313A054.png" alt="781061895efd6d92184ea867704ebad9_image_20231122145313A054"></p>
+<p><img src="/temp/zabbixweb%E7%AB%AF%E9%85%8D%E7%BD%AE%E4%B8%BB%E6%9C%BA%E7%9B%91%E6%8E%A7/7e2e85b480d974fea0433f3b134adc71_image_20231122145359A055.png" alt="7e2e85b480d974fea0433f3b134adc71_image_20231122145359A055"></p>
+</body></html>]]></content>
+      <tags>
+        <tag>zabbix</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>zabbix服务端搭建</title>
+    <url>/916b376b.html</url>
+    <content><![CDATA[<html><head></head><body><p><strong>zabbix服务端搭建</strong></p>
+<h1 id="一、Mysql8-0-30-部署"><a href="#一、Mysql8-0-30-部署" class="headerlink" title="一、Mysql8.0.30 部署"></a>一、Mysql8.0.30 部署</h1><h2 id="关闭系统防火墙"><a href="#关闭系统防火墙" class="headerlink" title="关闭系统防火墙"></a>关闭系统防火墙</h2><figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">[root@localhost ~]# systemctl stop firewalld</span><br><span class="line">[root@localhost ~]# systemctl disable firewalld</span><br><span class="line">[root@localhost ~]# vi /etc/selinux/config</span><br><span class="line">SELINUX=disabled</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<h2 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h2><figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">[root@localhost ~]# cd /usr/local/src/</span><br><span class="line">[root@localhost /usr/local/src]# wget https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.30-1.el7.x86_64.rpm-bundle.tar</span><br><span class="line"># 解压</span><br><span class="line">[root@localhost /usr/local/src]# tar -xvf mysql-8.0.30-1.el7.x86_64.rpm-bundle.tar</span><br><span class="line"># 忽略依赖检查强制安装，因为捆绑包里已经带依赖了，所以只要全部安装就可以，检查的话分先后顺序很麻烦的</span><br><span class="line">[root@localhost /usr/local/src]# sudo rpm -ivh mysql-community-*  --force --nodeps</span><br><span class="line">#创建数据存储目录</span><br><span class="line">[root@localhost ~]# mkdir -p /data/mysql</span><br><span class="line">[root@localhost ~]# chown mysql:mysql /data/mysql</span><br><span class="line">#修改配置文件</span><br><span class="line">[root@localhost ~]# vi /etc/my.cnf</span><br><span class="line">[root@localhost ~]# cat /etc/my.cnf</span><br><span class="line">[mysqld]</span><br><span class="line">datadir=/data/mysql</span><br><span class="line">socket=/var/lib/mysql/mysql.sock</span><br><span class="line"></span><br><span class="line">log-error=/var/log/mysqld.log</span><br><span class="line">pid-file=/var/run/mysqld/mysqld.pid</span><br><span class="line">character-set-server=utf8mb4</span><br><span class="line">collation-server=utf8mb4_general_ci</span><br><span class="line">port=3306</span><br><span class="line">lower_case_table_names=1</span><br><span class="line">max_connections=500</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="启动数据库"><a href="#启动数据库" class="headerlink" title="启动数据库"></a>启动数据库</h2><figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">#先查看libaio包是否有安装（安装了则不用管，未安装可能出现启动失败缺包的情况）</span><br><span class="line">#我这里使用的是aliyun的yum源（需要的可以在文档最底部查看）</span><br><span class="line">[root@localhost ~]# yum install libaio</span><br><span class="line">[root@localhost ~]# systemctl enable mysqld</span><br><span class="line">[root@localhost ~]# systemctl start mysqld</span><br><span class="line">#启动失败的话可以查看日志 /var/log/mysqld.log</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="获取密码登录Mysql"><a href="#获取密码登录Mysql" class="headerlink" title="获取密码登录Mysql"></a>获取密码登录Mysql</h2><figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">[root@localhost ~]# cat /var/log/mysqld.log | grep password</span><br><span class="line">2023-11-22T01:21:03.904164Z 6 [Note] [MY-010454] [Server] A temporary password is generated for root@localhost: (Ua?#Uw&amp;b1Us</span><br><span class="line">[root@localhost ~]# mysql -uroot -p(Ua?#Uw&amp;b1Us</span><br><span class="line">mysql&gt; alter user 'root'@'localhost' identified by 'Qihang@123';</span><br><span class="line">mysql&gt; flush privileges;</span><br><span class="line">#由于MySQL8.0 有密码验证组件，若希望设置简单的密码，需要修改服务验证条件</span><br><span class="line"># 密码检查等级，0/LOW、1/MEDIUM、2/STRONG</span><br><span class="line">mysql&gt; set global validate_password.policy=0;</span><br><span class="line"># 密码的最短长度</span><br><span class="line">mysql&gt; set global validate_password.length=6;</span><br><span class="line"># 密码至少要包含的小写字母个数和大写字母个数</span><br><span class="line">mysql&gt; set global validate_password.mixed_case_count=0;</span><br><span class="line">#创建zabbix库(这里zabbix对库的编码格式有需求)</span><br><span class="line">mysql&gt; create database zabbix character set utf8 collate utf8_bin;</span><br><span class="line">#创建用户（指定使用的身份验证插件）</span><br><span class="line">mysql&gt; create user 'zabbix'@'localhost' identified with mysql_native_password by '123123';</span><br><span class="line">mysql&gt; grant all privileges on zabbix.* to 'zabbix'@'localhost';</span><br><span class="line">mysql&gt; flush privileges;</span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="/temp/zabbix%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%90%AD%E5%BB%BA/578a8393a52979ef8d88b5e653fde783_image_20231122091701A039.png" alt="578a8393a52979ef8d88b5e653fde783_image_20231122091701A039"></p>
+<h1 id="二、nginx-部署"><a href="#二、nginx-部署" class="headerlink" title="二、nginx 部署"></a>二、nginx 部署</h1><figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">[root@localhost ~]# rpm -Uvh http://nginx.org/packages/centos/7/x86_64/RPMS/nginx-1.20.0-1.el7.ngx.x86_64.rpm</span><br><span class="line">[root@localhost ~]# mkdir /data/web</span><br><span class="line">[root@localhost ~]# mv /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf.bak</span><br><span class="line">#修改nginx的配置文件,要修改的主要是server{} ，也可以复制过去直接覆盖原来的配置文件</span><br><span class="line">[root@localhost ~]# vi /etc/nginx/nginx.conf </span><br><span class="line">user  nginx;</span><br><span class="line">worker_processes  auto;</span><br><span class="line">error_log  /var/log/nginx/error.log notice;</span><br><span class="line">pid        /var/run/nginx.pid;</span><br><span class="line"></span><br><span class="line">events {</span><br><span class="line">    worker_connections  1024;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">http {</span><br><span class="line">    include       /etc/nginx/mime.types;</span><br><span class="line">    default_type  application/octet-stream;</span><br><span class="line"></span><br><span class="line">    log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '</span><br><span class="line">                      '$status $body_bytes_sent "$http_referer" '</span><br><span class="line">                      '"$http_user_agent" "$http_x_forwarded_for"';</span><br><span class="line"></span><br><span class="line">    access_log  /var/log/nginx/access.log  main;</span><br><span class="line">    sendfile        on;</span><br><span class="line">    #tcp_nopush     on;</span><br><span class="line">    keepalive_timeout  65;</span><br><span class="line">    #gzip  on;</span><br><span class="line">    server {</span><br><span class="line">      listen       80;</span><br><span class="line">      server_name  localhost;</span><br><span class="line">      root         /data/web;</span><br><span class="line">      location / {</span><br><span class="line">        index  index.php index.html index.htm;</span><br><span class="line">      }</span><br><span class="line">      location ~ \.php$ {</span><br><span class="line">        fastcgi_pass   127.0.0.1:9000;</span><br><span class="line">        fastcgi_index  index.php;</span><br><span class="line">        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;</span><br><span class="line">        include        fastcgi_params;</span><br><span class="line">      }</span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">[root@localhost ~]# systemctl  enable nginx </span><br><span class="line">[root@localhost ~]# systemctl  start nginx </span><br></pre></td></tr></tbody></table></figure>
+
+<h1 id="三、PHP-部署"><a href="#三、PHP-部署" class="headerlink" title="三、PHP 部署"></a>三、PHP 部署</h1><figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">[root@localhost ~]# curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo</span><br><span class="line">[root@localhost ~]# yum -y install epel-release</span><br><span class="line">[root@localhost ~]# curl -o /etc/yum.repos.d/epel.repo http://mirrors.aliyun.com/repo/epel-7.repo</span><br><span class="line">[root@localhost ~]# rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm</span><br><span class="line">#webtatic源，一个web服务的源</span><br><span class="line">#安装php7及其它依赖软件</span><br><span class="line">[root@localhost ~]# yum -y install gcc gcc-c++ php72w-cli php72w-fpm php72w-gd php72w-mbstring php72w-bcmath php72w-xml php72w-ldap php72w-mysqlnd</span><br><span class="line">[root@localhost ~]# vi /etc/php.ini </span><br><span class="line">368:max_execution_time = 300</span><br><span class="line">378:max_input_time = 300</span><br><span class="line">656:post_max_size = 16M</span><br><span class="line">[root@localhost ~]# cd /data/web/</span><br><span class="line">[root@localhost /data/web]# vi index.php   #创建php测试页面</span><br><span class="line">&lt;?php</span><br><span class="line">phpinfo();</span><br><span class="line">?&gt;</span><br><span class="line">[root@localhost ~]# systemctl  enable php-fpm</span><br><span class="line">[root@localhost ~]# systemctl  start php-fpm</span><br></pre></td></tr></tbody></table></figure>
+
+<p>这里可以使用浏览器验证一下Nginx和PHP(内网中直接输入IP)</p>
+<p><img src="/temp/zabbix%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%90%AD%E5%BB%BA/aa95e25cc2c921bc72c140ea1c11a624_image_20231122095538A040.png" alt="aa95e25cc2c921bc72c140ea1c11a624_image_20231122095538A040"></p>
+<h1 id="四、zabbix-server-部署"><a href="#四、zabbix-server-部署" class="headerlink" title="四、zabbix-server 部署"></a>四、zabbix-server 部署</h1><figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">#创建用户</span><br><span class="line">[root@localhost ~]# groupadd zabbix</span><br><span class="line">[root@localhost ~]# useradd -g zabbix -M -s /sbin/nologin zabbix</span><br><span class="line">#下载安装</span><br><span class="line">[root@localhost ~]# cd /usr/local/src</span><br><span class="line">[root@localhost /usr/local/src]# wget https://cdn.zabbix.com/zabbix/sources/stable/6.0/zabbix-6.0.1.tar.gz</span><br><span class="line">[root@localhost /usr/local/src]# tar -xf zabbix-6.0.1.tar.gz</span><br><span class="line">[root@localhost /usr/local/src]# cd zabbix-6.0.1/</span><br><span class="line">#安装依赖</span><br><span class="line">[root@localhost /usr/local/src/zabbix-6.0.1]# yum -y install  mysql-devel pcre-devel openssl-devel zlib-devel libxml2-devel net-snmp-devel net-snmp libssh2-devel OpenIPMI-devel libevent-devel openldap-devel   libcurl-devel</span><br><span class="line">#编译安装</span><br><span class="line">[root@localhost /usr/local/src/zabbix-6.0.1]# ./configure --sysconfdir=/etc/zabbix --enable-server --with-mysql --with-net-snmp --with-libxml2 --with-ssh2 --with-openipmi --with-zlib --with-libpthread --with-libevent --with-openssl --with-ldap --with-libcurl --with-libpcre</span><br><span class="line">[root@localhost /usr/local/src/zabbix-6.0.1]# make install</span><br><span class="line"></span><br><span class="line">#修改配置文件（前面的数字代表的是要修改属性字段的行数 例如 12:）</span><br><span class="line">[root@localhost ~]# vi /etc/zabbix/zabbix_server.conf</span><br><span class="line">[root@localhost ~]# grep -n '^[a-Z]' /etc/zabbix/zabbix_server.conf</span><br><span class="line">12:ListenPort=10051</span><br><span class="line">38:LogFile=/tmp/zabbix_server.log</span><br><span class="line">87:DBHost=localhost</span><br><span class="line">99:DBName=zabbix</span><br><span class="line">115:DBUser=zabbix</span><br><span class="line">123:DBPassword=123123</span><br><span class="line">507:Timeout=4</span><br><span class="line">593:LogSlowQueries=3000</span><br><span class="line">708:StatsAllowedIP=127.0.0.1</span><br><span class="line"></span><br><span class="line">#向数据库中导入zabbix的库表及数据（注意导入的顺序）</span><br><span class="line">[root@localhost ~]# mysql -uzabbix -p123123 zabbix &lt; /usr/local/src/zabbix-6.0.1/database/mysql/schema.sql</span><br><span class="line">[root@localhost ~]# mysql -uzabbix -p123123 zabbix &lt; /usr/local/src/zabbix-6.0.1/database/mysql/images.sql</span><br><span class="line">[root@localhost ~]# mysql -uzabbix -p123123 zabbix &lt; /usr/local/src/zabbix-6.0.1/database/mysql/data.sql</span><br><span class="line"></span><br><span class="line">#移动zabbix前端页面到网站根目录</span><br><span class="line">[root@localhost ~]# cp -rp /usr/local/src/zabbix-6.0.1/ui/* /data/web/</span><br><span class="line">cp：是否覆盖"/data/web/index.php"？ y</span><br><span class="line"></span><br><span class="line">#配置zabbix系统启停命令（注意这个文件是新增的）</span><br><span class="line">[root@localhost ~]# vi /usr/lib/systemd/system/zabbix-server.service</span><br><span class="line">[Unit]</span><br><span class="line">Description=Zabbix Server with MySQL DB</span><br><span class="line">After=syslog.target network.target mysqld.service</span><br><span class="line">[Service]</span><br><span class="line">Type=simple</span><br><span class="line">ExecStart=/usr/local/sbin/zabbix_server -f</span><br><span class="line">User=zabbix</span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br><span class="line"></span><br><span class="line">#重新加载system文件</span><br><span class="line">[root@Zabbix mysql]# systemctl daemon-reload</span><br><span class="line">[root@Zabbix mysql]# systemctl enable zabbix-server</span><br><span class="line">Created symlink from /etc/systemd/system/multi-user.target.wants/zabbix-server.service to /usr/lib/systemd/system/zabbix.service.</span><br><span class="line">[root@Zabbix mysql]# systemctl start zabbix-server</span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="/temp/zabbix%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%90%AD%E5%BB%BA/f4df4aa1987110295a9da56523cd7168_image_20231122101058A041.png" alt="f4df4aa1987110295a9da56523cd7168_image_20231122101058A041"></p>
+<p><img src="/temp/zabbix%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%90%AD%E5%BB%BA/b2cd599c236ce910b0c2d9f80ef3a642_image_20231122101202A042.png" alt="b2cd599c236ce910b0c2d9f80ef3a642_image_20231122101202A042"></p>
+<p><img src="/temp/zabbix%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%90%AD%E5%BB%BA/995a7b2721f189ade969482388d30c1c_image_20231122101239A043.png" alt="995a7b2721f189ade969482388d30c1c_image_20231122101239A043"></p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">[root@localhost ~]# cp /data/web/conf/zabbix.conf.php.example /data/web/conf/zabbix.conf.php</span><br><span class="line">[root@localhost ~]# chown zabbix:zabbix /data/web/conf/zabbix.conf.php</span><br><span class="line">[root@localhost ~]# vi /data/web/conf/zabbix.conf.php</span><br><span class="line">#只修改PASSWORD的密码</span><br><span class="line">$DB['PASSWORD']			= '123123';</span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="/temp/zabbix%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%90%AD%E5%BB%BA/913c1788546f4c947604cce34f296266_image_20231122101345A044.png" alt="913c1788546f4c947604cce34f296266_image_20231122101345A044"></p>
+<p>默认账号密码：Admin zabbix</p>
+<p><img src="/temp/zabbix%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%90%AD%E5%BB%BA/4b3cdf5c96d86cb9d8bdb859d396d9b0_image_20231122101418A045.png" alt="4b3cdf5c96d86cb9d8bdb859d396d9b0_image_20231122101418A045"></p>
+<h1 id="六、解决zabbix-6-0-中文乱码问题"><a href="#六、解决zabbix-6-0-中文乱码问题" class="headerlink" title="六、解决zabbix 6.0 中文乱码问题"></a>六、解决zabbix 6.0 中文乱码问题</h1><p>将windows的 C:\Windows\Fonts 路径下将楷体的ttf文件复制到linux的 /data/web/assets/fonts 目录下，</p>
+<p><img src="/temp/zabbix%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%90%AD%E5%BB%BA/609a0ec3968476b1be264d32a867c814_image_20231122101555A046.png" alt="609a0ec3968476b1be264d32a867c814_image_20231122101555A046"></p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">#目录下有simkai.ttf这个新上传的文件</span><br><span class="line">[root@localhost ~]# ll /data/web/assets/fonts</span><br><span class="line">总用量 12252</span><br><span class="line">-rw-r--r-- 1 zabbix zabbix   756072 2月  28 2022 DejaVuSans.ttf</span><br><span class="line">-rw-r--r-- 1 root   root   11787328 11月 22 10:20 simkai.ttf</span><br><span class="line">#替换配置文件中的默认字体</span><br><span class="line">[root@localhost ~]# sed -i 's/DejaVuSans/simkai/g' /data/web/include/defines.inc.php</span><br><span class="line">#如果这里之前是修改了网页路径的话，到自己的路径下找include/defines.inc.php即可</span><br></pre></td></tr></tbody></table></figure>
+
+</body></html>]]></content>
+      <tags>
+        <tag>zabbix</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>zabbix监控项</title>
+    <url>/1b74b923.html</url>
+    <content><![CDATA[<html><head></head><body><table>
+<thead>
+<tr>
+<th align="right">监控项</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">监控项</td>
+<td>进程</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="right">名称</td>
+<td>键值</td>
+<td>键值说明</td>
+<td>信息类型</td>
+<td>单位</td>
+<td>自定义监控项</td>
+<td>自定义监控项配置</td>
+<td>名称</td>
+<td>参数</td>
+</tr>
+<tr>
+<td align="right">上行流量监控</td>
+<td>net.if.out[ens192]</td>
+<td>“ens192”网卡名称</td>
+<td>数字</td>
+<td></td>
+<td>否</td>
+<td></td>
+<td>每秒更改</td>
+<td></td>
+</tr>
+<tr>
+<td align="right">下行流量监控</td>
+<td>net.if.in[ens192]</td>
+<td>“ens192”网卡名称</td>
+<td>数字</td>
+<td></td>
+<td>否</td>
+<td></td>
+<td>每秒更改</td>
+<td></td>
+</tr>
+<tr>
+<td align="right">处理器使用率监控</td>
+<td>system.cpu.load[percpu]</td>
+<td></td>
+<td>浮点数</td>
+<td>%</td>
+<td>否</td>
+<td></td>
+<td>自定义倍数</td>
+<td>100</td>
+</tr>
+<tr>
+<td align="right">处理器负载监控</td>
+<td>system.cpu.util</td>
+<td></td>
+<td>浮点数</td>
+<td>%</td>
+<td>否</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="right">已使用内存监控</td>
+<td>Mem_pre</td>
+<td></td>
+<td>浮点数</td>
+<td>%</td>
+<td>是</td>
+<td>UserParameter=Mem_pre,echo $(free | awk ‘/Mem/{printf(“%.2f”), $3/$2*100}’)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="right">磁盘写入监控</td>
+<td>custom.vfs.dev.write.sectors[sda]</td>
+<td>“sda”硬盘名称</td>
+<td>数字</td>
+<td>b</td>
+<td>是</td>
+<td>UserParameter=custom.vfs.dev.write.sectors[*],cat /proc/diskstats | grep $1 | head -1 | awk ‘{print $$10}’</td>
+<td>每秒更改</td>
+<td></td>
+</tr>
+<tr>
+<td align="right">自定义倍数</td>
+<td>512</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="right">磁盘读取监控</td>
+<td>custom.vfs.dev.read.sectors[sda]</td>
+<td>“sda”硬盘名称</td>
+<td>数字</td>
+<td>b</td>
+<td>是</td>
+<td>UserParameter=custom.vfs.dev.read.sectors[*],cat /proc/diskstats | grep $1 | head -1 | awk ‘{print $$6}’</td>
+<td>每秒更改</td>
+<td></td>
+</tr>
+<tr>
+<td align="right">自定义倍数</td>
+<td>512</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</body></html>]]></content>
+      <tags>
+        <tag>zabbix</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>zabbix自定义监控项</title>
+    <url>/9ccde0e4.html</url>
+    <content><![CDATA[<html><head></head><body><p>在zabbixAgent服务端是修改配置文件</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line"># vi /etc/zabbix zabbix_agentd.conf</span><br><span class="line">333 UnsafeUserParameters=1</span><br><span class="line"></span><br><span class="line">在文件最下面添加自定义监控项</span><br><span class="line"></span><br><span class="line">//监控内存   Mem_pre是键值，后面的是执行的命令也可以是脚本</span><br><span class="line">serParameter=Mem_pre,echo  $(free | awk '/Mem/{printf("%.2f"), $3/$2*100}')</span><br></pre></td></tr></tbody></table></figure>
+
+<p>重启zabbixAgent服务</p>
+<p>zabbixweb端配置监控项</p>
+<p><img src="/temp/zabbix%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9B%91%E6%8E%A7%E9%A1%B9/2e4e49bbc2570c5f6af3cac3021126d1_image_20231122150911A057.png" alt="2e4e49bbc2570c5f6af3cac3021126d1_image_20231122150911A057"></p>
+<p>创建图形</p>
+<p><img src="/temp/zabbix%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9B%91%E6%8E%A7%E9%A1%B9/fdcfe376b37c15e1fdca8073cf0ab41f_image_20231122150949A058.png" alt="fdcfe376b37c15e1fdca8073cf0ab41f_image_20231122150949A058"></p>
+<p>查看监控图形</p>
+<p><img src="/temp/zabbix%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9B%91%E6%8E%A7%E9%A1%B9/8892163b0ce1338a5090cf83ac113cc9_image_20231122151023A059.png" alt="8892163b0ce1338a5090cf83ac113cc9_image_20231122151023A059"></p>
+</body></html>]]></content>
+      <tags>
+        <tag>zabbix</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>zabbix预警后通过企业微信机器人发送通知</title>
+    <url>/83de23f5.html</url>
+    <content><![CDATA[<html><head></head><body><h1 id="1-创建脚本"><a href="#1-创建脚本" class="headerlink" title="1.创建脚本"></a>1.创建脚本</h1><p>•首先在你的zabbix服务器找到这个目录alertscripts</p>
+<p>•可以用find查找</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line"># find / -name 'alertscripts'</span><br><span class="line">/usr/local/share/zabbix/alertscripts</span><br><span class="line">进入目录 cd /usr/local/share/zabbix/alertscripts</span><br></pre></td></tr></tbody></table></figure>
+
+<p>•创建脚本文件</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line"># vi qiYeWeiXinPush.sh</span><br><span class="line"></span><br><span class="line">key='cde60db4-98d7-4704-a9ea-54780f4ffd9c' #替换成机器人的key</span><br><span class="line">title=$2   </span><br><span class="line">content=$3   </span><br><span class="line">msgtype='markdown'  #你要的具体消息内容</span><br><span class="line">url=https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=$key</span><br><span class="line">json="{\"msgtype\":\"${msgtype}\",\"markdown\":{\"content\":\"${title}\n${content}\"}}"</span><br><span class="line">curl -H "Content-Type: application/json" -X POST -d "$json" $url</span><br></pre></td></tr></tbody></table></figure>
+
+<p>•赋予脚本执行权限</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">chmod +x qiYeWeiXinPush.sh</span><br></pre></td></tr></tbody></table></figure>
+
+<p>•执行一下脚本是否有效</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line"># ./qiYeWeiXinPush.sh zabbix 标题 内容</span><br><span class="line">{"errcode":0,"errmsg":"ok"}</span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/8dab0c0a177f72fa3aba8f5537e03b9a_image_20231122155808A067.png" alt="8dab0c0a177f72fa3aba8f5537e03b9a_image_20231122155808A067"></p>
+<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/0ee51557ba6b349e78d81ec508df6ac0_image_20231122155330A065.png" alt="0ee51557ba6b349e78d81ec508df6ac0_image_20231122155330A065"></p>
+<h1 id="2-zabbixweb端配置"><a href="#2-zabbixweb端配置" class="headerlink" title="2.zabbixweb端配置"></a>2.zabbixweb端配置</h1><p>•管理-报警媒介类型-创建媒介类型</p>
+<p>•脚本名称是‘alertscripts’文件夹下面的脚本文件名</p>
+<p>•添加三个脚本参数，脚本后面这三个</p>
+<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/d0c2c91a55881232a2537cbabc578f53_image_20231122160022A070.png" alt="d0c2c91a55881232a2537cbabc578f53_image_20231122160022A070"></p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">{ALERT.SENDTO}</span><br><span class="line">{ALERT.SUBJECT}</span><br><span class="line">{ALERT.MESSAGE}</span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/52ab8f893f7e15a9fd6ea77f1f905350_image_20231122155848A068.png" alt="52ab8f893f7e15a9fd6ea77f1f905350_image_20231122155848A068"></p>
+<p>创建动作</p>
+<p>•配置-动作-<a href="javascript:void(0)">Trigger actions</a>-创建动作</p>
+<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/f4a7a8d84ca9318e102050e49202a5da_image_20231122160108A071.png" alt="f4a7a8d84ca9318e102050e49202a5da_image_20231122160108A071"></p>
+<p>选择触发当前动作的触发器</p>
+<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/3b37c7be95ed6c83f32071150c6720de_image_20231122160259A072.png" alt="3b37c7be95ed6c83f32071150c6720de_image_20231122160259A072"></p>
+<p>添加操作，选择以后群组跟用户，勾选Custom message 自定义消息</p>
+<p>•主题</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">故障{TRIGGER.STATUS},服务器:{HOSTNAME1}发生:{TRIGGER.NAME}故障! 故障通知！！</span><br></pre></td></tr></tbody></table></figure>
+
+<p>•消息</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">&gt;告警主机:&lt;font color=\"comment\"&gt;{HOSTNAME1}&lt;/font&gt;</span><br><span class="line">&gt;IP地址：&lt;font color=\"comment\"&gt;{HOST.CONN} &lt;/font&gt;</span><br><span class="line">&gt;告警时间:&lt;font color=\"comment\"&gt;{EVENT.DATE} {EVENT.TIME}(UTC)&lt;/font&gt;</span><br><span class="line">&gt;告警等级:&lt;font color=\"comment\"&gt;{TRIGGER.SEVERITY}&lt;/font&gt;</span><br><span class="line">&gt;告警信息: &lt;font color=\"comment\"&gt;{TRIGGER.NAME}&lt;/font&gt;</span><br><span class="line">&gt;告警项目:&lt;font color=\"comment\"&gt;{TRIGGER.KEY1}&lt;/font&gt;</span><br><span class="line">&gt;问题详情:&lt;font color=\"comment\"&gt;{ITEM.NAME}:{ITEM.VALUE}&lt;/font&gt;</span><br><span class="line">&gt;当前状态:&lt;font color=\"comment\"&gt;{TRIGGER.STATUS}:{ITEM.VALUE1}&lt;/font&gt;</span><br><span class="line">&gt;事件ID:&lt;font color=\"comment\"&gt;{EVENT.ID}&lt;/font&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/66ef83c319aeea8a118e0f74d800b135_image_20231122160424A073.png" alt="66ef83c319aeea8a118e0f74d800b135_image_20231122160424A073"></p>
+<p>添加故障恢复时的操作</p>
+<p>•主题</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">恢复{TRIGGER.STATUS},服务器:{HOSTNAME1}:{TRIGGER.NAME}已恢复！！</span><br></pre></td></tr></tbody></table></figure>
+
+<p>•消息</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">&gt;告警主机:&lt;font color=\"comment\"&gt;{HOSTNAME1}&lt;/font&gt;</span><br><span class="line">&gt;IP地址：&lt;font color=\"comment\"&gt;{HOST.CONN} &lt;/font&gt;</span><br><span class="line">&gt;告警时间:&lt;font color=\"comment\"&gt;{EVENT.DATE} {EVENT.TIME}(UTC)&lt;/font&gt;</span><br><span class="line">&gt;告警等级:&lt;font color=\"comment\"&gt;{TRIGGER.SEVERITY}&lt;/font&gt;</span><br><span class="line">&gt;告警信息: &lt;font color=\"comment\"&gt;{TRIGGER.NAME}&lt;/font&gt;</span><br><span class="line">&gt;告警项目:&lt;font color=\"comment\"&gt;{TRIGGER.KEY1}&lt;/font&gt;</span><br><span class="line">&gt;问题详情:&lt;font color=\"comment\"&gt;{ITEM.NAME}:{ITEM.VALUE}&lt;/font&gt;</span><br><span class="line">&gt;当前状态:&lt;font color=\"comment\"&gt;{TRIGGER.STATUS}:{ITEM.VALUE1}&lt;/font&gt;</span><br><span class="line">&gt;事件ID:&lt;font color=\"comment\"&gt;{EVENT.ID}&lt;/font&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/fdb4f7cb71e80e3aa92aacc2c4ec1406_image_20231122160624A074.png" alt="fdb4f7cb71e80e3aa92aacc2c4ec1406_image_20231122160624A074"></p>
+<p>执行添加</p>
+<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/8f2e0e0e78b5971b0385d05ddd45eac7_image_20231122160726A075.png" alt="8f2e0e0e78b5971b0385d05ddd45eac7_image_20231122160726A075"></p>
+<p>创建用户报警媒介</p>
+<p>•管理-用户-Admin-报警媒介</p>
+<p>•添加报警媒介</p>
+<p>•类型选择刚刚创建的媒介类型，收件人是执行脚本时的第一个参数</p>
+<p>•添加-更新</p>
+<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/e01cbf7e10a1a60591dab6c1eb6eac4a_image_20231122160840A076.png" alt="e01cbf7e10a1a60591dab6c1eb6eac4a_image_20231122160840A076"></p>
+<p>3.效果</p>
+<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/3504c3d1317f092f3403a5518d39dbf2_image_20231122161244A079.png" alt="3504c3d1317f092f3403a5518d39dbf2_image_20231122161244A079"></p>
+<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/7ebf978c8f66d7647581f6df71a01447_image_20231122161218A077.png" alt="7ebf978c8f66d7647581f6df71a01447_image_20231122161218A077"></p>
+<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/a0f1a40f93ad24532c34d5922f7efb20_image_20231122161231A078.png" alt="a0f1a40f93ad24532c34d5922f7efb20_image_20231122161231A078"></p>
+<p>故障恢复后发送的通知</p>
+<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/53fd71e7aed5cfd159787fddf8919c28_image_20231122161536A080.png" alt="53fd71e7aed5cfd159787fddf8919c28_image_20231122161536A080"></p>
+<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/e6d93247129af9c7d566fe8c9666c4b4_image_20231122161608A081.png" alt="e6d93247129af9c7d566fe8c9666c4b4_image_20231122161608A081"></p>
+</body></html>]]></content>
+      <tags>
+        <tag>zabbix</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>zabbix配置触发器</title>
+    <url>/863a3196.html</url>
+    <content><![CDATA[<html><head></head><body><p>创建触发器</p>
+<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/e712b575071b5fcec0b6803b94a3fa03_image_20231122153511A060.png" alt="e712b575071b5fcec0b6803b94a3fa03_image_20231122153511A060"></p>
+<p>添加表达式，选择监控项，这里去最近的值，监控CPU返回的占用大于10就进行报警，处理器使用率监控返回最大值为100</p>
+<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/bcee0a996fd3c739d2a12c25f374a4c3_image_20231122153708A061.png" alt="bcee0a996fd3c739d2a12c25f374a4c3_image_20231122153708A061"></p>
+<p>添加完成</p>
+<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/c853b937174569d0bddfeb7f81e9f859_image_20231122153912A062.png" alt="c853b937174569d0bddfeb7f81e9f859_image_20231122153912A062"></p>
+<p>触发一下CPU过高，监测可以看到预警线</p>
+<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/32036db396a995f46f1867ab259af33d_image_20231122154057A063.png" alt="32036db396a995f46f1867ab259af33d_image_20231122154057A063"></p>
+<p>监测-问题可以看到已经出发预警了</p>
+<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/7ac96f2539771f599811bca247ab50df_image_20231122154147A064.png" alt="7ac96f2539771f599811bca247ab50df_image_20231122154147A064"></p>
+</body></html>]]></content>
+      <tags>
+        <tag>zabbix</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>安装zabbix-agent</title>
+    <url>/61d73a59.html</url>
+    <content><![CDATA[<html><head></head><body><p>1.安装zabbix存储库</p>
+<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"># rpm -<span class="title class_">Uvh</span> <span class="attr">https</span>:<span class="comment">//repo.zabbix.com/zabbix/5.0/rhel/7/x86_64/zabbix-release-5.0-1.el7.noarch.rpm</span></span><br><span class="line"># yum clean all &amp;&amp; yum makecache fast</span><br><span class="line"># yum -y install zabbix-agent zabbix-sender zabbix-java-gateway</span><br><span class="line"># systemctl enable --now zabbix-agent zabbix-java-gateway</span><br><span class="line"># netstat -anpt | egrep <span class="string">"zabbix|java"</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>2.修改zabbix-agent配置文件</p>
+<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"># vim /etc/zabbix/zabbix_agentd.<span class="property">conf</span></span><br><span class="line"><span class="title class_">Server</span>=<span class="string">"ZabbixServerIP"</span></span><br><span class="line"><span class="title class_">ServerActive</span>=<span class="string">"ZabbixServerIP"</span></span><br><span class="line"><span class="title class_">Hostname</span>=<span class="string">"本机主机名，在zabbix-web端配置主机时需要填写”</span></span><br><span class="line"><span class="string">重启服务：</span></span><br><span class="line"><span class="string"># systemctl restart zabbix-agent</span></span><br></pre></td></tr></tbody></table></figure></body></html>]]></content>
+      <tags>
+        <tag>zabbix</tag>
+      </tags>
+  </entry>
+</search>
