@@ -1,6 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>centos7 固定局域网 ip</title>
+    <url>/7a29a0ef.html</url>
+    <content><![CDATA[<html><head></head><body><p>1、首先查看自己的 ip 是什么：</p>
+<p><img src="/temp/7a29a0ef/201126c0753d0d00bef63f869aba0909_image_20230719114716A045.png" alt="201126c0753d0d00bef63f869aba0909_image_20230719114716A045"></p>
+<p>发现有两个网卡设备，其中 eno33 是我们的有线网卡，ip 地址是 192.168.7.29</p>
+<p>2、控制台输入：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">netstat -rn</span><br></pre></td></tr></tbody></table></figure>
+
+<p>来查看<a href="https://so.csdn.net/so/search?q=%E5%AD%90%E7%BD%91%E6%8E%A9%E7%A0%81&amp;spm=1001.2101.3001.7020">子网掩码</a>跟网关</p>
+<p><img src="/temp/7a29a0ef/927f2a8de7138825eac8ca00276d5c33_image_20230719114749A046.png" alt="927f2a8de7138825eac8ca00276d5c33_image_20230719114749A046"></p>
+<p>3、得到需要的信息后，更改网络配置文件： 进入如下路径</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">/etc/sysconfig/network-scripts/</span><br></pre></td></tr></tbody></table></figure>
+
+<p>找到与自己网卡名字相同的 ifcfg-xxxx 文件打开吧编辑 列如：我的是 ens33, 我就打开下图的文件</p>
+<p><img src="/temp/7a29a0ef/ba81d79f0d284ba94020306655314c27_image_20230719114814A047.png" alt="ba81d79f0d284ba94020306655314c27_image_20230719114814A047"></p>
+<p>一下内容文档中没有的加进去，有的修改即可（子网掩码、默认网关设置成未固定 ip 时查询出来的，本机地址固定成想要的 ip）</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">BOOTPROTO="static"#静态IP</span><br><span class="line">IPADDR=192.168.7.27#本机地址</span><br><span class="line">NETMASK=255.255.255.0 #子网掩码</span><br><span class="line">GATEWAY=192.168.7.254 #默认网关</span><br><span class="line">DNS1=114.114.114.114</span><br><span class="line">ONBOOT="yes"#开机启动</span><br></pre></td></tr></tbody></table></figure>
+
+<p>4、重启网络：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">service network restart</span><br><span class="line">Restarting network (via systemctl):                        [  OK  ]</span><br></pre></td></tr></tbody></table></figure></body></html>]]></content>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux重置密码</title>
+    <url>/bc09ee4e.html</url>
+    <content><![CDATA[<html><head></head><body><p>1、重启虚拟机，在引导界面按“e”（按鼠标左键，用键盘控制上下），进入类界面，把中间的ro改为</p>
+<p><code>rw rd.break</code></p>
+<p><img src="/temp/Linux%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A0%81/0abf922b3f161b0fc8273fb6ec1281f6_3d110013893e278e79f9eb8fb7b036a5_e045304b7ddc4342876513da9fd9c44d_20230926164240A373.png" alt="0abf922b3f161b0fc8273fb6ec1281f6_3d110013893e278e79f9eb8fb7b036a5_e045304b7ddc4342876513da9fd9c44d_20230926164240A373"></p>
+<p><img src="/temp/Linux%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A0%81/9a27b45126b43bba335f4c98c190dbc3_78248313e5db49ff34525072ab77cac9_92dcf5e866814969882d583eef55c0c8_20230926164244A374.jpg" alt="9a27b45126b43bba335f4c98c190dbc3_78248313e5db49ff34525072ab77cac9_92dcf5e866814969882d583eef55c0c8_20230926164244A374"></p>
+<p><img src="/temp/Linux%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A0%81/aa39740483f059a824408b8959498e51_da1504b874b84956caebd03b7a5aa957_a9be29e34cd74c099a266a92ee0f7594_20230926164247A375.png" alt="aa39740483f059a824408b8959498e51_da1504b874b84956caebd03b7a5aa957_a9be29e34cd74c099a266a92ee0f7594_20230926164247A375"></p>
+<p>2、按住Ctrl+“x”，进入紧急界面；</p>
+<p>3、回滚原系统:输入<code>chroot /sysroot</code>再回车；</p>
+<p>4、设置密码：输入passwd，会弹出new password，直接输入你要修改的密码（会提示您输入二次新密码）；</p>
+<p>5、检查安全性：输入<code>touch /.autorelabel</code>；</p>
+<p>6、退出紧急界面：输入exit；</p>
+<p>7、重启：reboot。</p>
+<p><img src="/temp/Linux%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A0%81/1da2594014b62e44e7574265523802b2_131e9843d6f63a5992e0d4ef92d357f9_e47c7f625fba42208e0f0f7536bd39ff_20230926164257A376.jpg" alt="1da2594014b62e44e7574265523802b2_131e9843d6f63a5992e0d4ef92d357f9_e47c7f625fba42208e0f0f7536bd39ff_20230926164257A376"></p>
+<p>（注：图中左边的提示点为要输入的命令）</p>
+</body></html>]]></content>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>zabbixweb端配置主机监控</title>
     <url>/3b635a38.html</url>
     <content><![CDATA[<html><head></head><body><h1 id="1-创建主机"><a href="#1-创建主机" class="headerlink" title="1.创建主机"></a>1.创建主机</h1><p>•主机名称是zabbix-agent客户端里面配置的 Hostname=””</p>
@@ -229,6 +275,24 @@
       </tags>
   </entry>
   <entry>
+    <title>zabbix配置触发器</title>
+    <url>/863a3196.html</url>
+    <content><![CDATA[<html><head></head><body><p>创建触发器</p>
+<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/e712b575071b5fcec0b6803b94a3fa03_image_20231122153511A060.png" alt="e712b575071b5fcec0b6803b94a3fa03_image_20231122153511A060"></p>
+<p>添加表达式，选择监控项，这里去最近的值，监控CPU返回的占用大于10就进行报警，处理器使用率监控返回最大值为100</p>
+<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/bcee0a996fd3c739d2a12c25f374a4c3_image_20231122153708A061.png" alt="bcee0a996fd3c739d2a12c25f374a4c3_image_20231122153708A061"></p>
+<p>添加完成</p>
+<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/c853b937174569d0bddfeb7f81e9f859_image_20231122153912A062.png" alt="c853b937174569d0bddfeb7f81e9f859_image_20231122153912A062"></p>
+<p>触发一下CPU过高，监测可以看到预警线</p>
+<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/32036db396a995f46f1867ab259af33d_image_20231122154057A063.png" alt="32036db396a995f46f1867ab259af33d_image_20231122154057A063"></p>
+<p>监测-问题可以看到已经出发预警了</p>
+<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/7ac96f2539771f599811bca247ab50df_image_20231122154147A064.png" alt="7ac96f2539771f599811bca247ab50df_image_20231122154147A064"></p>
+</body></html>]]></content>
+      <tags>
+        <tag>zabbix</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>zabbix预警后通过企业微信机器人发送通知</title>
     <url>/83de23f5.html</url>
     <content><![CDATA[<html><head></head><body><h1 id="1-创建脚本"><a href="#1-创建脚本" class="headerlink" title="1.创建脚本"></a>1.创建脚本</h1><p>•首先在你的zabbix服务器找到这个目录alertscripts</p>
@@ -295,24 +359,6 @@
       </tags>
   </entry>
   <entry>
-    <title>zabbix配置触发器</title>
-    <url>/863a3196.html</url>
-    <content><![CDATA[<html><head></head><body><p>创建触发器</p>
-<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/e712b575071b5fcec0b6803b94a3fa03_image_20231122153511A060.png" alt="e712b575071b5fcec0b6803b94a3fa03_image_20231122153511A060"></p>
-<p>添加表达式，选择监控项，这里去最近的值，监控CPU返回的占用大于10就进行报警，处理器使用率监控返回最大值为100</p>
-<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/bcee0a996fd3c739d2a12c25f374a4c3_image_20231122153708A061.png" alt="bcee0a996fd3c739d2a12c25f374a4c3_image_20231122153708A061"></p>
-<p>添加完成</p>
-<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/c853b937174569d0bddfeb7f81e9f859_image_20231122153912A062.png" alt="c853b937174569d0bddfeb7f81e9f859_image_20231122153912A062"></p>
-<p>触发一下CPU过高，监测可以看到预警线</p>
-<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/32036db396a995f46f1867ab259af33d_image_20231122154057A063.png" alt="32036db396a995f46f1867ab259af33d_image_20231122154057A063"></p>
-<p>监测-问题可以看到已经出发预警了</p>
-<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/7ac96f2539771f599811bca247ab50df_image_20231122154147A064.png" alt="7ac96f2539771f599811bca247ab50df_image_20231122154147A064"></p>
-</body></html>]]></content>
-      <tags>
-        <tag>zabbix</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>安装zabbix-agent</title>
     <url>/61d73a59.html</url>
     <content><![CDATA[<html><head></head><body><p>1.安装zabbix存储库</p>
@@ -322,6 +368,58 @@
 <figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"># vim /etc/zabbix/zabbix_agentd.<span class="property">conf</span></span><br><span class="line"><span class="title class_">Server</span>=<span class="string">"ZabbixServerIP"</span></span><br><span class="line"><span class="title class_">ServerActive</span>=<span class="string">"ZabbixServerIP"</span></span><br><span class="line"><span class="title class_">Hostname</span>=<span class="string">"本机主机名，在zabbix-web端配置主机时需要填写”</span></span><br><span class="line"><span class="string">重启服务：</span></span><br><span class="line"><span class="string"># systemctl restart zabbix-agent</span></span><br></pre></td></tr></tbody></table></figure></body></html>]]></content>
       <tags>
         <tag>zabbix</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>centos7 关闭防火墙</title>
+    <url>/1fa40c40.html</url>
+    <content><![CDATA[<html><head></head><body><p>查看防火墙状态：</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line">systemctl status firewalld.service</span><br></pre></td></tr></tbody></table></figure>
+
+<p>关闭防火墙：</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line">systemctl stop firewalld.service</span><br></pre></td></tr></tbody></table></figure>
+
+<p>永久禁止防火墙启动：</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line">systemctl disable firewalld.service</span><br></pre></td></tr></tbody></table></figure>
+</body></html>]]></content>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>接口操作MySQL跟MongoDB事务回滚问题</title>
+    <url>/2d55720e.html</url>
+    <content><![CDATA[<html><head></head><body><h1 id="接口操作MySQL跟MongoDB事务回滚问题，MySQL可正常回滚，MongoDB无法正常回滚"><a href="#接口操作MySQL跟MongoDB事务回滚问题，MySQL可正常回滚，MongoDB无法正常回滚" class="headerlink" title="接口操作MySQL跟MongoDB事务回滚问题，MySQL可正常回滚，MongoDB无法正常回滚"></a>接口操作MySQL跟MongoDB事务回滚问题，MySQL可正常回滚，MongoDB无法正常回滚</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>通常使用的事务注解：@Tra nsactional 是不会对MongoDB生效的，但是在一些生产接口中无法避免同时使用MySQL跟MongoDB的操作。</p>
+<h2 id="问题处理方式"><a href="#问题处理方式" class="headerlink" title="问题处理方式"></a>问题处理方式</h2><p>1、创建 <code>MultiTransactional.java</code></p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.lang.annotation.*;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Target(ElementType.METHOD)</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="meta">@Documented</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> MultiTransactional {</span><br><span class="line">	String[] value() <span class="keyword">default</span> {};</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>2、创建 <code>TransactionConfig.java</code></p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> org.springframework.beans.factory.annotation.Qualifier;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.annotation.Bean;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.annotation.Configuration;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.annotation.Primary;</span><br><span class="line"><span class="keyword">import</span> org.springframework.data.mongodb.MongoDatabaseFactory;</span><br><span class="line"><span class="keyword">import</span> org.springframework.data.mongodb.MongoTransactionManager;</span><br><span class="line"><span class="keyword">import</span> org.springframework.jdbc.datasource.DataSourceTransactionManager;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> javax.sql.DataSource;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">TransactionConfig</span> {</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Bean(name = "mybatisTransactionManager")</span></span><br><span class="line">    <span class="meta">@Primary</span> <span class="comment">//事务默认使用mysql数据库</span></span><br><span class="line">    <span class="keyword">public</span> DataSourceTransactionManager <span class="title function_">testTransactionManager</span><span class="params">(<span class="meta">@Qualifier("dataSource")</span> DataSource dataSource)</span> {</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">DataSourceTransactionManager</span>(dataSource);</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Bean(name = "mongoTransactionManager")</span></span><br><span class="line">    MongoTransactionManager <span class="title function_">transactionManager</span><span class="params">(MongoDatabaseFactory factory)</span>{</span><br><span class="line">	<span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">MongoTransactionManager</span>(factory);</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>3、创建 <code>DbTxBroker.java</code></p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> org.springframework.stereotype.Component;</span><br><span class="line"><span class="keyword">import</span> org.springframework.transaction.annotation.Transactional;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.concurrent.Callable;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">DbTxBroker</span> {</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Transactional(value = "mybatisTransactionManager")</span></span><br><span class="line">	<span class="keyword">public</span> &lt;V&gt; V <span class="title function_">inTransactionMybatisTransactionManager</span><span class="params">(Callable&lt;V&gt; callable)</span> {</span><br><span class="line">		<span class="keyword">try</span> {</span><br><span class="line">			<span class="keyword">return</span> callable.call();</span><br><span class="line">		} <span class="keyword">catch</span> (RuntimeException e) {</span><br><span class="line">			<span class="keyword">throw</span> e;</span><br><span class="line">		} <span class="keyword">catch</span> (Exception e) {</span><br><span class="line">			<span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">RuntimeException</span>(e);</span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Transactional(value = "mongoTransactionManager")</span></span><br><span class="line">	<span class="keyword">public</span> &lt;V&gt; V <span class="title function_">inTransactionMongoTransactionManager</span><span class="params">(Callable&lt;V&gt; callable)</span> {</span><br><span class="line">		<span class="keyword">try</span> {</span><br><span class="line">			<span class="keyword">return</span> callable.call();</span><br><span class="line">		} <span class="keyword">catch</span> (RuntimeException e) {</span><br><span class="line">			<span class="keyword">throw</span> e;</span><br><span class="line">		} <span class="keyword">catch</span> (Exception e) {</span><br><span class="line">			<span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">RuntimeException</span>(e);</span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>4、创建  <code>ComboTransaction.java</code></p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> com.alibaba.druid.util.StringUtils;</span><br><span class="line"><span class="keyword">import</span> org.springframework.beans.factory.annotation.Autowired;</span><br><span class="line"><span class="keyword">import</span> org.springframework.stereotype.Component;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.concurrent.Callable;</span><br><span class="line"><span class="keyword">import</span> java.util.stream.Stream;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ComboTransaction</span> {</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Autowired</span></span><br><span class="line">	<span class="keyword">private</span> DbTxBroker dbTxBroker;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">public</span> &lt;V&gt; V <span class="title function_">inCombinedTx</span><span class="params">(Callable&lt;V&gt; callable, String[] transactions)</span> {</span><br><span class="line">		<span class="keyword">if</span> (callable == <span class="literal">null</span>) {</span><br><span class="line">			<span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">		}</span><br><span class="line"></span><br><span class="line">		Callable&lt;V&gt; combined = Stream.of(transactions).filter(ele -&gt; !StringUtils.isEmpty(ele)).distinct()</span><br><span class="line">				.reduce(callable, (r, tx) -&gt; {</span><br><span class="line">					<span class="keyword">switch</span> (tx) {</span><br><span class="line">					<span class="keyword">case</span> <span class="string">"mybatisTransactionManager"</span>:</span><br><span class="line">						<span class="keyword">return</span> () -&gt; dbTxBroker.inTransactionMybatisTransactionManager(r);</span><br><span class="line">					<span class="keyword">case</span> <span class="string">"mongoTransactionManager"</span>:</span><br><span class="line">						<span class="keyword">return</span> () -&gt; dbTxBroker.inTransactionMongoTransactionManager(r);</span><br><span class="line">					<span class="keyword">default</span>:</span><br><span class="line">						<span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">					}</span><br><span class="line">				}, (r1, r2) -&gt; r2);</span><br><span class="line"></span><br><span class="line">		<span class="keyword">try</span> {</span><br><span class="line">			<span class="keyword">return</span> combined.call();</span><br><span class="line">		} <span class="keyword">catch</span> (RuntimeException e) {</span><br><span class="line">			<span class="keyword">throw</span> e;</span><br><span class="line">		} <span class="keyword">catch</span> (Exception e) {</span><br><span class="line">			<span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">RuntimeException</span>(e);</span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>5、创建 <code>MultiTransactionAop.java</code></p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> org.aspectj.lang.ProceedingJoinPoint;</span><br><span class="line"><span class="keyword">import</span> org.aspectj.lang.annotation.Around;</span><br><span class="line"><span class="keyword">import</span> org.aspectj.lang.annotation.Aspect;</span><br><span class="line"><span class="keyword">import</span> org.aspectj.lang.annotation.Pointcut;</span><br><span class="line"><span class="keyword">import</span> org.springframework.beans.factory.annotation.Autowired;</span><br><span class="line"><span class="keyword">import</span> org.springframework.stereotype.Component;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Aspect</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MultiTransactionAop</span> {</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> ComboTransaction comboTransaction;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MultiTransactionAop</span><span class="params">(ComboTransaction comboTransaction)</span> {</span><br><span class="line">        <span class="built_in">this</span>.comboTransaction = comboTransaction;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Pointcut("@annotation(com.xx.xx.MultiTransactional)")</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">pointCut</span><span class="params">()</span> {</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Around("pointCut() &amp;&amp; @annotation(multiTransactional)")</span></span><br><span class="line">    <span class="keyword">public</span> Object <span class="title function_">inMultiTransactions</span><span class="params">(ProceedingJoinPoint pjp, MultiTransactional multiTransactional)</span> {</span><br><span class="line">        <span class="keyword">return</span> comboTransaction.inCombinedTx(() -&gt; {</span><br><span class="line">            <span class="keyword">try</span> {</span><br><span class="line">                <span class="keyword">return</span> pjp.proceed();</span><br><span class="line">            } <span class="keyword">catch</span> (Throwable throwable) {</span><br><span class="line">                <span class="keyword">if</span> (throwable <span class="keyword">instanceof</span> RuntimeException) {</span><br><span class="line">                    <span class="keyword">throw</span> (RuntimeException) throwable;</span><br><span class="line">                }</span><br><span class="line">                <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">RuntimeException</span>(throwable);</span><br><span class="line">            }</span><br><span class="line">        }, multiTransactional.value());</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">}<span class="number">6</span>、最后在使用接口上使用 <span class="meta">@MultiTransactional</span> 的注解</span><br></pre></td></tr></tbody></table></figure>
+
+<p>mybatisTransactionManager跟mongoTransactionManager表示同时启用数据mybatis操作的数据库跟MongoDB同时开启事务同时提交事务</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@MultiTransactional(value = {"mybatisTransactionManager", "mongoTransactionManager"})</span></span><br></pre></td></tr></tbody></table></figure>
+</body></html>]]></content>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java实现图片压缩</title>
+    <url>/b83f7f1a.html</url>
+    <content><![CDATA[<html><head></head><body><figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">try</span> {</span><br><span class="line">	<span class="comment">/** 将压缩分辨率设置为1080P */</span></span><br><span class="line">	<span class="type">double</span> <span class="variable">compressionResolution</span> <span class="operator">=</span> <span class="number">1920.00</span>;</span><br><span class="line">	<span class="comment">/** 源图片路径 */</span></span><br><span class="line">	<span class="type">String</span> <span class="variable">sourcePicturePath</span> <span class="operator">=</span> <span class="string">"d:\\图片压缩\\1.png"</span>;</span><br><span class="line">	<span class="comment">/** 压缩后保存图片的路径 */</span></span><br><span class="line">	<span class="type">String</span> <span class="variable">compressedPicturePath</span> <span class="operator">=</span> <span class="string">"d:\\图片压缩\\2.png"</span>;</span><br><span class="line"></span><br><span class="line">	<span class="comment">/** 获取要压缩的文件 */</span></span><br><span class="line">	<span class="type">File</span> <span class="variable">file</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">File</span>(sourcePicturePath);</span><br><span class="line">	<span class="comment">/** 将文件转图片 */</span></span><br><span class="line">	<span class="type">BufferedImage</span> <span class="variable">sourceImg</span> <span class="operator">=</span> ImageIO.read(<span class="keyword">new</span> <span class="title class_">FileInputStream</span>(file));</span><br><span class="line">	<span class="comment">/** 获取图片的宽高 */</span></span><br><span class="line">	<span class="type">int</span> <span class="variable">width</span> <span class="operator">=</span> sourceImg.getWidth();</span><br><span class="line">	<span class="type">int</span> <span class="variable">height</span> <span class="operator">=</span> sourceImg.getHeight();</span><br><span class="line">	System.out.println(String.format(<span class="string">"源图片宽[%s] 高[%s]"</span>, width, height));</span><br><span class="line"></span><br><span class="line">	<span class="comment">/** 分辨率小于要压缩的分辨率时不压缩 */</span></span><br><span class="line">	<span class="keyword">if</span> (width &lt;= compressionResolution) {</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	}</span><br><span class="line"></span><br><span class="line">	<span class="comment">/** 计算压缩的倍率 */</span></span><br><span class="line">	<span class="type">double</span> <span class="variable">compressionRatio</span> <span class="operator">=</span> width / compressionResolution;</span><br><span class="line">            </span><br><span class="line">	<span class="comment">/** 计算压缩后的宽高 */</span></span><br><span class="line">	width = (<span class="type">int</span>) (width / compressionRatio);</span><br><span class="line">	height = (<span class="type">int</span>) (height / compressionRatio);</span><br><span class="line"></span><br><span class="line">	System.out.println(String.format(<span class="string">"压缩后图片宽[%s] 高[%s]"</span>, width, height));</span><br><span class="line"></span><br><span class="line">	<span class="comment">/** 开始压缩 */</span></span><br><span class="line">	Thumbnails.of(file)</span><br><span class="line">		.size(width, height)</span><br><span class="line">		.toFile(<span class="keyword">new</span> <span class="title class_">File</span>(compressedPicturePath));</span><br><span class="line"></span><br><span class="line">} <span class="keyword">catch</span> (Exception e) {</span><br><span class="line">	<span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">RuntimeException</span>(<span class="string">"压缩图片失败"</span>);</span><br><span class="line">}</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+</body></html>]]></content>
+      <tags>
+        <tag>Java</tag>
       </tags>
   </entry>
 </search>
