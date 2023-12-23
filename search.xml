@@ -441,24 +441,24 @@
 <p><code>https://www.ikuai8.com/component/download</code></p>
 <p>本次教程使用腾讯云服务器进行安装，无需下载通过上面下载链接下载镜像</p>
 <p>1.准备一台ubuntu系统的服务器<br>2.下载ISO安装包<br>x32位<br><code>wget https://www.ikuai8.com/download.php?n=/3.x/iso/iKuai8_x32_3.5.11_Build202112031159.iso -O ikuai8.iso</code><br>x64位<br><code>wget https://www.ikuai8.com/download.php?n=/3.x/iso/iKuai8_x64_3.5.11_Build202112031159.iso -O ikuai8.iso</code><br>安装版本 iKuai8_x64_3.5.11_Build202112031159.iso 可通过历史日志 选择对应版本进行下载 _x64或_x32 需要指定是安装64位还是32位的镜像</p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenV%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/1.png" alt="1"></p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenV%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/2.png" alt="2"></p>
+<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/1.png" alt="1"></p>
+<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/2.png" alt="2"></p>
 <p>这里演示安装的是最新版的 版本号是</p>
 <p><code>wget https://www.ikuai8.com/download.php?n=/3.x/iso/iKuai8_x64_3.6.12_Build202212231532.iso -O ikuai8.iso</code></p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenV%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/3.png" alt="3"></p>
+<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/3.png" alt="3"></p>
 <p>连上服务器输入下载镜像命令</p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenV%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/4.png" alt="4"></p>
+<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/4.png" alt="4"></p>
 <p>等待下载完成</p>
 <p>3.挂载ISO镜像</p>
 <p><code>sudo mount ikuai8.iso /mnt</code></p>
 <p>4.复制ISO镜像启动文件</p>
 <p><code>sudo cp -rpf /mnt/boot /</code></p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenV%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/5.png" alt="5"></p>
+<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/5.png" alt="5"></p>
 <p>5.重启服务器</p>
 <p>6.使用VNC连接服务器</p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenV%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/6.png" alt="6"></p>
+<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/6.png" alt="6"></p>
 <p>7.按提示安装ikuai</p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenV%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/7.png" alt="7"></p>
+<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/7.png" alt="7"></p>
 <p>到此界面ikuai就算安装完成了</p>
 <p>但是现在ikuai系统是无法联网跟无法使用外网访问web端的</p>
 <p>8.设置网卡绑定</p>
@@ -467,36 +467,36 @@
 <li>输入 del lan1 eth0 删除默认绑定的lan1口</li>
 <li>输入 set wan1 eth0 绑定wan1口</li>
 </ol>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenV%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/8.png" alt="8"></p>
+<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/8.png" alt="8"></p>
 <p>输入q返回上一级</p>
 <p>9.开启外网访问web端</p>
 <ol>
 <li>进入菜单 o</li>
 <li>输入 2</li>
 </ol>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenV%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/9.png" alt="9"></p>
+<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/9.png" alt="9"></p>
 <p>此时浏览器输入公网IP就能访问ikuai的web管理页面了<br>ikuai默认账号密码admin/admin</p>
 <p>10.配置openVPN服务端<br>登录web端后依次点击菜单 认证计费-本地认证服务-OpenVPN服务端</p>
 <p>点击开启OpenVPN服务端</p>
 <p>拉倒页面最下面点击保存</p>
 <p>左上角有一个 到处windows客户端配置 的按钮，先把配置导出来，后面要用到</p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenV%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/10.png" alt="10"></p>
+<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/10.png" alt="10"></p>
 <p>然后进入菜单 认证计费-认证账号管理-账号管理 新增一个测试用户</p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenV%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/11.png" alt="11"></p>
+<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/11.png" alt="11"></p>
 <p>新增账号配置</p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenV%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/12.png" alt="12"></p>
+<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/12.png" alt="12"></p>
 <h3 id="安装使用openVPN客户端"><a href="#安装使用openVPN客户端" class="headerlink" title="安装使用openVPN客户端"></a>安装使用openVPN客户端</h3><p>打开从ikuai里面导出的conf文件打开修改公网IP</p>
 <p>然后将后缀conf改成ovpn</p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenV%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/13.png" alt="13"></p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenV%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/14.png" alt="14"></p>
+<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/13.png" alt="13"></p>
+<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/14.png" alt="14"></p>
 <p>打开后鼠标右击任务栏图标 选择 导入-导入配置文件 导入配置文件</p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenV%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/15.png" alt="15"></p>
+<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/15.png" alt="15"></p>
 <p>导入后右击连接</p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenV%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/16.png" alt="16"></p>
+<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/16.png" alt="16"></p>
 <p>此时会需要输入在ikuai新增的账号密码 点击确认开始连接</p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenV%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/17.png" alt="17"></p>
+<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/17.png" alt="17"></p>
 <p>右下角任务栏图标变成绿色即连接成功</p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenV%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/18.png" alt="18"></p>
+<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/18.png" alt="18"></p>
 <p>鼠标悬浮上可以看到刚刚给当前登录以后固定的内网ip</p>
 <p>此时可以输入192.168.100.0 通过内网打开ikuai web端</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">注意：不能吧用户IP固定成xxx.xxx.xxx.1 因为.1会分配给ikuai的服务器，导致在内网IP分配问题</span><br></pre></td></tr></tbody></table></figure>
