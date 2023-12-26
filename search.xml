@@ -18,16 +18,20 @@
     <url>/bc09ee4e.html</url>
     <content><![CDATA[<html><head></head><body><p>1、重启虚拟机，在引导界面按“e”（按鼠标左键，用键盘控制上下），进入类界面，把中间的ro改为</p>
 <p><code>rw rd.break</code></p>
-<p><img src="/temp/Linux%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A0%81/0abf922b3f161b0fc8273fb6ec1281f6_3d110013893e278e79f9eb8fb7b036a5_e045304b7ddc4342876513da9fd9c44d_20230926164240A373.png" alt="0abf922b3f161b0fc8273fb6ec1281f6_3d110013893e278e79f9eb8fb7b036a5_e045304b7ddc4342876513da9fd9c44d_20230926164240A373"></p>
-<p><img src="/temp/Linux%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A0%81/9a27b45126b43bba335f4c98c190dbc3_78248313e5db49ff34525072ab77cac9_92dcf5e866814969882d583eef55c0c8_20230926164244A374.jpg" alt="9a27b45126b43bba335f4c98c190dbc3_78248313e5db49ff34525072ab77cac9_92dcf5e866814969882d583eef55c0c8_20230926164244A374"></p>
-<p><img src="/temp/Linux%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A0%81/aa39740483f059a824408b8959498e51_da1504b874b84956caebd03b7a5aa957_a9be29e34cd74c099a266a92ee0f7594_20230926164247A375.png" alt="aa39740483f059a824408b8959498e51_da1504b874b84956caebd03b7a5aa957_a9be29e34cd74c099a266a92ee0f7594_20230926164247A375"></p>
+<!-- ![0abf922b3f161b0fc8273fb6ec1281f6_3d110013893e278e79f9eb8fb7b036a5_e045304b7ddc4342876513da9fd9c44d_20230926164240A373](/temp/Linux重置密码/0abf922b3f161b0fc8273fb6ec1281f6_3d110013893e278e79f9eb8fb7b036a5_e045304b7ddc4342876513da9fd9c44d_20230926164240A373.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/0abf922b3f161b0fc8273fb6ec1281f6_3d110013893e278e79f9eb8fb7b036a5_e045304b7ddc4342876513da9fd9c44d_20230926164240A373.2xik77zvrrc0.jpg" alt="图片"></p>
+<!-- ![9a27b45126b43bba335f4c98c190dbc3_78248313e5db49ff34525072ab77cac9_92dcf5e866814969882d583eef55c0c8_20230926164244A374](/temp/Linux重置密码/9a27b45126b43bba335f4c98c190dbc3_78248313e5db49ff34525072ab77cac9_92dcf5e866814969882d583eef55c0c8_20230926164244A374.jpg) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/9a27b45126b43bba335f4c98c190dbc3_78248313e5db49ff34525072ab77cac9_92dcf5e866814969882d583eef55c0c8_20230926164244A374.1iyjw09357wg.jpg" alt="图片"></p>
+<!-- ![aa39740483f059a824408b8959498e51_da1504b874b84956caebd03b7a5aa957_a9be29e34cd74c099a266a92ee0f7594_20230926164247A375](/temp/Linux重置密码/aa39740483f059a824408b8959498e51_da1504b874b84956caebd03b7a5aa957_a9be29e34cd74c099a266a92ee0f7594_20230926164247A375.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/aa39740483f059a824408b8959498e51_da1504b874b84956caebd03b7a5aa957_a9be29e34cd74c099a266a92ee0f7594_20230926164247A375.18f9osjo2log.jpg" alt="图片"></p>
 <p>2、按住Ctrl+“x”，进入紧急界面；</p>
 <p>3、回滚原系统:输入<code>chroot /sysroot</code>再回车；</p>
 <p>4、设置密码：输入passwd，会弹出new password，直接输入你要修改的密码（会提示您输入二次新密码）；</p>
 <p>5、检查安全性：输入<code>touch /.autorelabel</code>；</p>
 <p>6、退出紧急界面：输入exit；</p>
 <p>7、重启：reboot。</p>
-<p><img src="/temp/Linux%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A0%81/1da2594014b62e44e7574265523802b2_131e9843d6f63a5992e0d4ef92d357f9_e47c7f625fba42208e0f0f7536bd39ff_20230926164257A376.jpg" alt="1da2594014b62e44e7574265523802b2_131e9843d6f63a5992e0d4ef92d357f9_e47c7f625fba42208e0f0f7536bd39ff_20230926164257A376"></p>
+<!-- ![1da2594014b62e44e7574265523802b2_131e9843d6f63a5992e0d4ef92d357f9_e47c7f625fba42208e0f0f7536bd39ff_20230926164257A376](/temp/Linux重置密码/1da2594014b62e44e7574265523802b2_131e9843d6f63a5992e0d4ef92d357f9_e47c7f625fba42208e0f0f7536bd39ff_20230926164257A376.jpg) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/1da2594014b62e44e7574265523802b2_131e9843d6f63a5992e0d4ef92d357f9_e47c7f625fba42208e0f0f7536bd39ff_20230926164257A376.1rhuwsbgtoow.jpg" alt="图片"></p>
 <p>（注：图中左边的提示点为要输入的命令）</p>
 </body></html>]]></content>
       <categories>
@@ -44,7 +48,9 @@
     <content><![CDATA[<html><head></head><body><h1 id="NPS-服务端跟客户端的配置"><a href="#NPS-服务端跟客户端的配置" class="headerlink" title="NPS 服务端跟客户端的配置"></a>NPS 服务端跟客户端的配置</h1><h2 id="服务端使用"><a href="#服务端使用" class="headerlink" title="服务端使用"></a>服务端使用</h2><h3 id="服务端-linux-darwin-安装"><a href="#服务端-linux-darwin-安装" class="headerlink" title="服务端 linux|darwin 安装"></a>服务端 linux|darwin 安装</h3><h4 id="下载完服务器压缩包后，解压，然后进入解压后的文件夹-执行安装命令"><a href="#下载完服务器压缩包后，解压，然后进入解压后的文件夹-执行安装命令" class="headerlink" title="下载完服务器压缩包后，解压，然后进入解压后的文件夹 执行安装命令"></a>下载完服务器压缩包后，解压，然后进入解压后的文件夹 执行安装命令</h4><p> 　　对于 linux|darwin <font color="#FF00FF">sudo ./nps install</font><br> 　　对于 windows，管理员身份运行 cmd，进入程序目录 <font color="#FF00FF">nps.exe start</font></p>
 <h4 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h4><p>　　对于 linux|darwin sudo nps start<br>　　对于 windows，管理员身份运行 cmd，进入程序目录 nps.exe start<br>　　安装后windows配置文件位于 C:\Program Files\nps，linux和darwin位于/etc/nps<br>　　停止和重启可用，  <font color="#FF00FF">stop</font> 和  <font color="#FF00FF">restart</font></p>
 <h5 id="如果发现没有启动成功，可以使用-nps-exe-stop，然后运行-nps-exe-运行调试，或查看日志-Windows-日志文件位于当前运行目录下，linux-和-darwin-位于-var-log-nps-log"><a href="#如果发现没有启动成功，可以使用-nps-exe-stop，然后运行-nps-exe-运行调试，或查看日志-Windows-日志文件位于当前运行目录下，linux-和-darwin-位于-var-log-nps-log" class="headerlink" title="如果发现没有启动成功，可以使用 nps(.exe) stop，然后运行 nps.(exe) 运行调试，或查看日志 (Windows 日志文件位于当前运行目录下，linux 和 darwin 位于 /var/log/nps.log)"></a>如果发现没有启动成功，可以使用 nps(.exe) stop，然后运行 nps.(exe) 运行调试，或查看日志 (Windows 日志文件位于当前运行目录下，linux 和 darwin 位于 /var/log/nps.log)</h5><p>　　问服务端 ip:web 服务端口（默认为 8080）<br>　　使用用户名和密码登陆（默认 admin/123，正式使用一定要更改）<br>　　创建客户端</p>
-<h3 id="客户端注册到系统服务-开机启动、守护进程"><a href="#客户端注册到系统服务-开机启动、守护进程" class="headerlink" title="客户端注册到系统服务 (开机启动、守护进程)"></a>客户端注册到系统服务 (开机启动、守护进程)</h3><p>对于 linux、darwin<br>　　注册： <font color="#FF00FF">sudo ./npc install</font>  其他参数（例如-server=xx -vkey=xx或者-config=xxx）<br>　　启动： <font color="#FF00FF">sudo npc start</font><br>　　停止： <font color="#FF00FF">sudo npc stop</font><br>　　如果需要更换命令内容需要先卸载./npc uninstall，再重新注册<br>　　对于 windows，使用管理员身份运行 cmd<br>　　注册： <font color="#FF00FF">npc.exe install </font> 其他参数（例如-server=xx -vkey=xx或者-config=xxx）<br>　　启动： <font color="#FF00FF">npc.exe start</font><br>　　停止： <font color="#FF00FF">npc.exe stop</font><br>　　如果需要更换命令内容需要先卸载 npc.exe uninstall，再重新注册<br>　　如果需要当客户端退出时自动重启客户端，请按照如图所示配置<br><img src="/temp/NPS%E6%9C%8D%E5%8A%A1%E7%AB%AF%E8%B7%9F%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84%E9%85%8D%E7%BD%AE/1.png" alt="1"><br>注册到服务后，日志文件 windows 位于当前目录下，linux 和 darwin 位于 /var/log/npc.log</p>
+<h3 id="客户端注册到系统服务-开机启动、守护进程"><a href="#客户端注册到系统服务-开机启动、守护进程" class="headerlink" title="客户端注册到系统服务 (开机启动、守护进程)"></a>客户端注册到系统服务 (开机启动、守护进程)</h3><p>对于 linux、darwin<br>　　注册： <font color="#FF00FF">sudo ./npc install</font>  其他参数（例如-server=xx -vkey=xx或者-config=xxx）<br>　　启动： <font color="#FF00FF">sudo npc start</font><br>　　停止： <font color="#FF00FF">sudo npc stop</font><br>　　如果需要更换命令内容需要先卸载./npc uninstall，再重新注册<br>　　对于 windows，使用管理员身份运行 cmd<br>　　注册： <font color="#FF00FF">npc.exe install </font> 其他参数（例如-server=xx -vkey=xx或者-config=xxx）<br>　　启动： <font color="#FF00FF">npc.exe start</font><br>　　停止： <font color="#FF00FF">npc.exe stop</font><br>　　如果需要更换命令内容需要先卸载 npc.exe uninstall，再重新注册<br>　　如果需要当客户端退出时自动重启客户端，请按照如图所示配置</p>
+<!-- ![1](/temp/NPS服务端跟客户端的配置/1.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/1.1akygkiad4qo.jpg" alt="图片"><br>注册到服务后，日志文件 windows 位于当前目录下，linux 和 darwin 位于 /var/log/npc.log</p>
 </body></html>]]></content>
       <categories>
         <category>内网穿透</category>
@@ -79,18 +85,21 @@
     <title>centos7 固定局域网 ip</title>
     <url>/7a29a0ef.html</url>
     <content><![CDATA[<html><head></head><body><p>1、首先查看自己的 ip 是什么：</p>
-<p><img src="/temp/7a29a0ef/201126c0753d0d00bef63f869aba0909_image_20230719114716A045.png" alt="201126c0753d0d00bef63f869aba0909_image_20230719114716A045"></p>
+<!-- ![1](/temp/7a29a0ef/201126c0753d0d00bef63f869aba0909_image_20230719114716A045.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/201126c0753d0d00bef63f869aba0909_image_20230719114716A045.4yt76kgslu80.jpg" alt="1"></p>
 <p>发现有两个网卡设备，其中 eno33 是我们的有线网卡，ip 地址是 192.168.7.29</p>
 <p>2、控制台输入：</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">netstat -rn</span><br></pre></td></tr></tbody></table></figure>
 
-<p>来查看<a href="https://so.csdn.net/so/search?q=%E5%AD%90%E7%BD%91%E6%8E%A9%E7%A0%81&amp;spm=1001.2101.3001.7020">子网掩码</a>跟网关</p>
-<p><img src="/temp/7a29a0ef/927f2a8de7138825eac8ca00276d5c33_image_20230719114749A046.png" alt="927f2a8de7138825eac8ca00276d5c33_image_20230719114749A046"></p>
+<p>来查看子网掩码跟网关</p>
+<!-- ![2](/temp/7a29a0ef/927f2a8de7138825eac8ca00276d5c33_image_20230719114749A046.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/927f2a8de7138825eac8ca00276d5c33_image_20230719114749A046.7jq4bs0wbt40.jpg" alt="2"></p>
 <p>3、得到需要的信息后，更改网络配置文件： 进入如下路径</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">/etc/sysconfig/network-scripts/</span><br></pre></td></tr></tbody></table></figure>
 
 <p>找到与自己网卡名字相同的 ifcfg-xxxx 文件打开吧编辑 列如：我的是 ens33, 我就打开下图的文件</p>
-<p><img src="/temp/7a29a0ef/ba81d79f0d284ba94020306655314c27_image_20230719114814A047.png" alt="ba81d79f0d284ba94020306655314c27_image_20230719114814A047"></p>
+<!-- ![3](/temp/7a29a0ef/ba81d79f0d284ba94020306655314c27_image_20230719114814A047.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/ba81d79f0d284ba94020306655314c27_image_20230719114814A047.26aue70x1ctc.jpg" alt="3"></p>
 <p>一下内容文档中没有的加进去，有的修改即可（子网掩码、默认网关设置成未固定 ip 时查询出来的，本机地址固定成想要的 ip）</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">BOOTPROTO="static"#静态IP</span><br><span class="line">IPADDR=192.168.7.27#本机地址</span><br><span class="line">NETMASK=255.255.255.0 #子网掩码</span><br><span class="line">GATEWAY=192.168.7.254 #默认网关</span><br><span class="line">DNS1=114.114.114.114</span><br><span class="line">ONBOOT="yes"#开机启动</span><br></pre></td></tr></tbody></table></figure>
 
@@ -110,21 +119,30 @@
     <content><![CDATA[<html><head></head><body><h1 id="1-创建主机"><a href="#1-创建主机" class="headerlink" title="1.创建主机"></a>1.创建主机</h1><p>•主机名称是zabbix-agent客户端里面配置的 Hostname=””</p>
 <p>•群组随便</p>
 <p>•interfaces 添加一个客户端，IP地址是zabbix-agent客户端的ip地址，端口默认10050</p>
-<p><img src="/temp/zabbixweb%E7%AB%AF%E9%85%8D%E7%BD%AE%E4%B8%BB%E6%9C%BA%E7%9B%91%E6%8E%A7/9fc632715f9013757a575ac8ae803f95_image_20231122143834A047.png" alt="9fc632715f9013757a575ac8ae803f95_image_20231122143834A047"></p>
+<!-- ![9fc632715f9013757a575ac8ae803f95_image_20231122143834A047](/temp/zabbixweb端配置主机监控/9fc632715f9013757a575ac8ae803f95_image_20231122143834A047.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/f89fe49d049d0efe077ab8c4ff8a10ee_image_20231122144357A049.1345f1n7xzm8.jpg" alt="图片"></p>
 <h1 id="2-添加监控项"><a href="#2-添加监控项" class="headerlink" title="2.添加监控项"></a>2.添加监控项</h1><p>•刚添加主机的时候没有监控项可用性是灰色的，添加监控项后会变成绿色</p>
-<p><img src="/temp/zabbixweb%E7%AB%AF%E9%85%8D%E7%BD%AE%E4%B8%BB%E6%9C%BA%E7%9B%91%E6%8E%A7/f89fe49d049d0efe077ab8c4ff8a10ee_image_20231122144357A049.png" alt="f89fe49d049d0efe077ab8c4ff8a10ee_image_20231122144357A049"></p>
-<p><img src="/temp/zabbixweb%E7%AB%AF%E9%85%8D%E7%BD%AE%E4%B8%BB%E6%9C%BA%E7%9B%91%E6%8E%A7/c2ff14a6698f9f85a1bc8defcb5a51d8_image_20231122144246A048.png" alt="c2ff14a6698f9f85a1bc8defcb5a51d8_image_20231122144246A048"></p>
+<!-- ![f89fe49d049d0efe077ab8c4ff8a10ee_image_20231122144357A049](/temp/zabbixweb端配置主机监控/f89fe49d049d0efe077ab8c4ff8a10ee_image_20231122144357A049.png) -->
+<p><img src="/" alt="图片"></p>
+<!-- ![c2ff14a6698f9f85a1bc8defcb5a51d8_image_20231122144246A048](/temp/zabbixweb端配置主机监控/c2ff14a6698f9f85a1bc8defcb5a51d8_image_20231122144246A048.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/c2ff14a6698f9f85a1bc8defcb5a51d8_image_20231122144246A048.6q5q2plgqs80.jpg" alt="图片"></p>
 <p>找到对应主机的‘监控项’鼠标单击，进入到监控项页面</p>
-<p><img src="/temp/zabbixweb%E7%AB%AF%E9%85%8D%E7%BD%AE%E4%B8%BB%E6%9C%BA%E7%9B%91%E6%8E%A7/24a3d8be2437996252154e2b70f6d17f_image_20231122144536A050.png" alt="24a3d8be2437996252154e2b70f6d17f_image_20231122144536A050"></p>
+<!-- ![24a3d8be2437996252154e2b70f6d17f_image_20231122144536A050](/temp/zabbixweb端配置主机监控/24a3d8be2437996252154e2b70f6d17f_image_20231122144536A050.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/24a3d8be2437996252154e2b70f6d17f_image_20231122144536A050.5dfoprcz8sk0.jpg" alt="图片"></p>
 <p>新增监控项-键值是对应的监控项目，更具需求选择，演示的是监控CPU使用率的</p>
-<p><img src="/temp/zabbixweb%E7%AB%AF%E9%85%8D%E7%BD%AE%E4%B8%BB%E6%9C%BA%E7%9B%91%E6%8E%A7/ca10e0d2f5a3da841416de964effa769_image_20231122144701A051.png" alt="ca10e0d2f5a3da841416de964effa769_image_20231122144701A051"></p>
+<!-- ![ca10e0d2f5a3da841416de964effa769_image_20231122144701A051](/temp/zabbixweb端配置主机监控/ca10e0d2f5a3da841416de964effa769_image_20231122144701A051.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/ca10e0d2f5a3da841416de964effa769_image_20231122144701A051.5bsszdaa9oc0.jpg" alt="图片"></p>
 <h1 id="3-添加图形"><a href="#3-添加图形" class="headerlink" title="3.添加图形"></a>3.添加图形</h1><p>•找到对应主机的‘图形’鼠标单击，进入到监控项页面</p>
-<p><img src="/temp/zabbixweb%E7%AB%AF%E9%85%8D%E7%BD%AE%E4%B8%BB%E6%9C%BA%E7%9B%91%E6%8E%A7/0feb42e8ad38dfc5c6aea7613f56efb2_image_20231122145038A052.png" alt="0feb42e8ad38dfc5c6aea7613f56efb2_image_20231122145038A052"></p>
+<!-- ![0feb42e8ad38dfc5c6aea7613f56efb2_image_20231122145038A052](/temp/zabbixweb端配置主机监控/0feb42e8ad38dfc5c6aea7613f56efb2_image_20231122145038A052.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/0feb42e8ad38dfc5c6aea7613f56efb2_image_20231122145038A052.64ffefguyd80.jpg" alt="图片"></p>
 <p>创建图形选择监控项为刚刚创建好的处理器使用频率监控</p>
-<p><img src="/temp/zabbixweb%E7%AB%AF%E9%85%8D%E7%BD%AE%E4%B8%BB%E6%9C%BA%E7%9B%91%E6%8E%A7/54dbce22e0df05fd33e5051c33ed483d_image_20231122145122A053.png" alt="54dbce22e0df05fd33e5051c33ed483d_image_20231122145122A053"></p>
+<!-- ![54dbce22e0df05fd33e5051c33ed483d_image_20231122145122A053](/temp/zabbixweb端配置主机监控/54dbce22e0df05fd33e5051c33ed483d_image_20231122145122A053.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/54dbce22e0df05fd33e5051c33ed483d_image_20231122145122A053.2al4y1nar4is.jpg" alt="图片"></p>
 <h1 id="4-数据监测"><a href="#4-数据监测" class="headerlink" title="4.数据监测"></a>4.数据监测</h1><p>监测-主机，找到对应的主机单击‘图形’</p>
-<p><img src="/temp/zabbixweb%E7%AB%AF%E9%85%8D%E7%BD%AE%E4%B8%BB%E6%9C%BA%E7%9B%91%E6%8E%A7/781061895efd6d92184ea867704ebad9_image_20231122145313A054.png" alt="781061895efd6d92184ea867704ebad9_image_20231122145313A054"></p>
-<p><img src="/temp/zabbixweb%E7%AB%AF%E9%85%8D%E7%BD%AE%E4%B8%BB%E6%9C%BA%E7%9B%91%E6%8E%A7/7e2e85b480d974fea0433f3b134adc71_image_20231122145359A055.png" alt="7e2e85b480d974fea0433f3b134adc71_image_20231122145359A055"></p>
+<!-- ![781061895efd6d92184ea867704ebad9_image_20231122145313A054](/temp/zabbixweb端配置主机监控/781061895efd6d92184ea867704ebad9_image_20231122145313A054.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/781061895efd6d92184ea867704ebad9_image_20231122145313A054.7czp9k5z0ls0.jpg" alt="图片"></p>
+<!-- ![7e2e85b480d974fea0433f3b134adc71_image_20231122145359A055](/temp/zabbixweb端配置主机监控/7e2e85b480d974fea0433f3b134adc71_image_20231122145359A055.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/7e2e85b480d974fea0433f3b134adc71_image_20231122145359A055.2ojsnrvyt9y0.jpg" alt="图片"></p>
 </body></html>]]></content>
       <categories>
         <category>Zabbix</category>
@@ -147,7 +165,8 @@
 
 <h2 id="获取密码登录Mysql"><a href="#获取密码登录Mysql" class="headerlink" title="获取密码登录Mysql"></a>获取密码登录Mysql</h2><figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">[root@localhost ~]# cat /var/log/mysqld.log | grep password</span><br><span class="line">2023-11-22T01:21:03.904164Z 6 [Note] [MY-010454] [Server] A temporary password is generated for root@localhost: (Ua?#Uw&amp;b1Us</span><br><span class="line">[root@localhost ~]# mysql -uroot -p(Ua?#Uw&amp;b1Us</span><br><span class="line">mysql&gt; alter user 'root'@'localhost' identified by 'Qihang@123';</span><br><span class="line">mysql&gt; flush privileges;</span><br><span class="line">#由于MySQL8.0 有密码验证组件，若希望设置简单的密码，需要修改服务验证条件</span><br><span class="line"># 密码检查等级，0/LOW、1/MEDIUM、2/STRONG</span><br><span class="line">mysql&gt; set global validate_password.policy=0;</span><br><span class="line"># 密码的最短长度</span><br><span class="line">mysql&gt; set global validate_password.length=6;</span><br><span class="line"># 密码至少要包含的小写字母个数和大写字母个数</span><br><span class="line">mysql&gt; set global validate_password.mixed_case_count=0;</span><br><span class="line">#创建zabbix库(这里zabbix对库的编码格式有需求)</span><br><span class="line">mysql&gt; create database zabbix character set utf8 collate utf8_bin;</span><br><span class="line">#创建用户（指定使用的身份验证插件）</span><br><span class="line">mysql&gt; create user 'zabbix'@'localhost' identified with mysql_native_password by '123123';</span><br><span class="line">mysql&gt; grant all privileges on zabbix.* to 'zabbix'@'localhost';</span><br><span class="line">mysql&gt; flush privileges;</span><br></pre></td></tr></tbody></table></figure>
 
-<p><img src="/temp/zabbix%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%90%AD%E5%BB%BA/578a8393a52979ef8d88b5e653fde783_image_20231122091701A039.png" alt="578a8393a52979ef8d88b5e653fde783_image_20231122091701A039"></p>
+<!-- ![578a8393a52979ef8d88b5e653fde783_image_20231122091701A039](/temp/zabbix服务端搭建/578a8393a52979ef8d88b5e653fde783_image_20231122091701A039.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/1.1akygkiad4qo.jpg" alt="图片"></p>
 <h1 id="二、nginx-部署"><a href="#二、nginx-部署" class="headerlink" title="二、nginx 部署"></a>二、nginx 部署</h1><figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">[root@localhost ~]# rpm -Uvh http://nginx.org/packages/centos/7/x86_64/RPMS/nginx-1.20.0-1.el7.ngx.x86_64.rpm</span><br><span class="line">[root@localhost ~]# mkdir /data/web</span><br><span class="line">[root@localhost ~]# mv /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf.bak</span><br><span class="line">#修改nginx的配置文件,要修改的主要是server{} ，也可以复制过去直接覆盖原来的配置文件</span><br><span class="line">[root@localhost ~]# vi /etc/nginx/nginx.conf </span><br><span class="line">user  nginx;</span><br><span class="line">worker_processes  auto;</span><br><span class="line">error_log  /var/log/nginx/error.log notice;</span><br><span class="line">pid        /var/run/nginx.pid;</span><br><span class="line"></span><br><span class="line">events {</span><br><span class="line">    worker_connections  1024;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">http {</span><br><span class="line">    include       /etc/nginx/mime.types;</span><br><span class="line">    default_type  application/octet-stream;</span><br><span class="line"></span><br><span class="line">    log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '</span><br><span class="line">                      '$status $body_bytes_sent "$http_referer" '</span><br><span class="line">                      '"$http_user_agent" "$http_x_forwarded_for"';</span><br><span class="line"></span><br><span class="line">    access_log  /var/log/nginx/access.log  main;</span><br><span class="line">    sendfile        on;</span><br><span class="line">    #tcp_nopush     on;</span><br><span class="line">    keepalive_timeout  65;</span><br><span class="line">    #gzip  on;</span><br><span class="line">    server {</span><br><span class="line">      listen       80;</span><br><span class="line">      server_name  localhost;</span><br><span class="line">      root         /data/web;</span><br><span class="line">      location / {</span><br><span class="line">        index  index.php index.html index.htm;</span><br><span class="line">      }</span><br><span class="line">      location ~ \.php$ {</span><br><span class="line">        fastcgi_pass   127.0.0.1:9000;</span><br><span class="line">        fastcgi_index  index.php;</span><br><span class="line">        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;</span><br><span class="line">        include        fastcgi_params;</span><br><span class="line">      }</span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">[root@localhost ~]# systemctl  enable nginx </span><br><span class="line">[root@localhost ~]# systemctl  start nginx </span><br></pre></td></tr></tbody></table></figure>
 
 <h1 id="三、PHP-部署"><a href="#三、PHP-部署" class="headerlink" title="三、PHP 部署"></a>三、PHP 部署</h1><figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">[root@localhost ~]# curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo</span><br><span class="line">[root@localhost ~]# yum -y install epel-release</span><br><span class="line">[root@localhost ~]# curl -o /etc/yum.repos.d/epel.repo http://mirrors.aliyun.com/repo/epel-7.repo</span><br><span class="line">[root@localhost ~]# rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm</span><br><span class="line">#webtatic源，一个web服务的源</span><br><span class="line">#安装php7及其它依赖软件</span><br><span class="line">[root@localhost ~]# yum -y install gcc gcc-c++ php72w-cli php72w-fpm php72w-gd php72w-mbstring php72w-bcmath php72w-xml php72w-ldap php72w-mysqlnd</span><br><span class="line">[root@localhost ~]# vi /etc/php.ini </span><br><span class="line">368:max_execution_time = 300</span><br><span class="line">378:max_input_time = 300</span><br><span class="line">656:post_max_size = 16M</span><br><span class="line">[root@localhost ~]# cd /data/web/</span><br><span class="line">[root@localhost /data/web]# vi index.php   #创建php测试页面</span><br><span class="line">&lt;?php</span><br><span class="line">phpinfo();</span><br><span class="line">?&gt;</span><br><span class="line">[root@localhost ~]# systemctl  enable php-fpm</span><br><span class="line">[root@localhost ~]# systemctl  start php-fpm</span><br></pre></td></tr></tbody></table></figure>
@@ -331,11 +350,14 @@
 
 <p>重启zabbixAgent服务</p>
 <p>zabbixweb端配置监控项</p>
-<p><img src="/temp/zabbix%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9B%91%E6%8E%A7%E9%A1%B9/2e4e49bbc2570c5f6af3cac3021126d1_image_20231122150911A057.png" alt="2e4e49bbc2570c5f6af3cac3021126d1_image_20231122150911A057"></p>
+<!-- ![2e4e49bbc2570c5f6af3cac3021126d1_image_20231122150911A057](/temp/zabbix自定义监控项/2e4e49bbc2570c5f6af3cac3021126d1_image_20231122150911A057.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/2e4e49bbc2570c5f6af3cac3021126d1_image_20231122150911A057.56pd75fqkks0.jpg" alt="图片"></p>
 <p>创建图形</p>
-<p><img src="/temp/zabbix%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9B%91%E6%8E%A7%E9%A1%B9/fdcfe376b37c15e1fdca8073cf0ab41f_image_20231122150949A058.png" alt="fdcfe376b37c15e1fdca8073cf0ab41f_image_20231122150949A058"></p>
+<!-- ![fdcfe376b37c15e1fdca8073cf0ab41f_image_20231122150949A058](/temp/zabbix自定义监控项/fdcfe376b37c15e1fdca8073cf0ab41f_image_20231122150949A058.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/fdcfe376b37c15e1fdca8073cf0ab41f_image_20231122150949A058.57otailtbqk0.jpg" alt="图片"></p>
 <p>查看监控图形</p>
-<p><img src="/temp/zabbix%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9B%91%E6%8E%A7%E9%A1%B9/8892163b0ce1338a5090cf83ac113cc9_image_20231122151023A059.png" alt="8892163b0ce1338a5090cf83ac113cc9_image_20231122151023A059"></p>
+<!-- ![8892163b0ce1338a5090cf83ac113cc9_image_20231122151023A059](/temp/zabbix自定义监控项/8892163b0ce1338a5090cf83ac113cc9_image_20231122151023A059.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/8892163b0ce1338a5090cf83ac113cc9_image_20231122151023A059.4f2z8bwz3nc0.jpg" alt="图片"></p>
 </body></html>]]></content>
       <categories>
         <category>Zabbix</category>
@@ -349,15 +371,20 @@
     <title>zabbix配置触发器</title>
     <url>/863a3196.html</url>
     <content><![CDATA[<html><head></head><body><p>创建触发器</p>
-<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/e712b575071b5fcec0b6803b94a3fa03_image_20231122153511A060.png" alt="e712b575071b5fcec0b6803b94a3fa03_image_20231122153511A060"></p>
+<!-- ![e712b575071b5fcec0b6803b94a3fa03_image_20231122153511A060](/temp/zabbix配置触发器/e712b575071b5fcec0b6803b94a3fa03_image_20231122153511A060.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/e712b575071b5fcec0b6803b94a3fa03_image_20231122153511A060.76mdndvcpow0.jpg" alt="图片"></p>
 <p>添加表达式，选择监控项，这里去最近的值，监控CPU返回的占用大于10就进行报警，处理器使用率监控返回最大值为100</p>
-<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/bcee0a996fd3c739d2a12c25f374a4c3_image_20231122153708A061.png" alt="bcee0a996fd3c739d2a12c25f374a4c3_image_20231122153708A061"></p>
+<!-- ![bcee0a996fd3c739d2a12c25f374a4c3_image_20231122153708A061](/temp/zabbix配置触发器/bcee0a996fd3c739d2a12c25f374a4c3_image_20231122153708A061.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/bcee0a996fd3c739d2a12c25f374a4c3_image_20231122153708A061.630ise9845s0.jpg" alt="图片"></p>
 <p>添加完成</p>
-<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/c853b937174569d0bddfeb7f81e9f859_image_20231122153912A062.png" alt="c853b937174569d0bddfeb7f81e9f859_image_20231122153912A062"></p>
+<!-- ![c853b937174569d0bddfeb7f81e9f859_image_20231122153912A062](/temp/zabbix配置触发器/c853b937174569d0bddfeb7f81e9f859_image_20231122153912A062.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/c853b937174569d0bddfeb7f81e9f859_image_20231122153912A062.6dcf4wpvm480.jpg" alt="图片"></p>
 <p>触发一下CPU过高，监测可以看到预警线</p>
-<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/32036db396a995f46f1867ab259af33d_image_20231122154057A063.png" alt="32036db396a995f46f1867ab259af33d_image_20231122154057A063"></p>
+<!-- ![32036db396a995f46f1867ab259af33d_image_20231122154057A063](/temp/zabbix配置触发器/32036db396a995f46f1867ab259af33d_image_20231122154057A063.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/32036db396a995f46f1867ab259af33d_image_20231122154057A063.57z5hhy2w000.jpg" alt="图片"></p>
 <p>监测-问题可以看到已经出发预警了</p>
-<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/7ac96f2539771f599811bca247ab50df_image_20231122154147A064.png" alt="7ac96f2539771f599811bca247ab50df_image_20231122154147A064"></p>
+<!-- ![7ac96f2539771f599811bca247ab50df_image_20231122154147A064](/temp/zabbix配置触发器/7ac96f2539771f599811bca247ab50df_image_20231122154147A064.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/7ac96f2539771f599811bca247ab50df_image_20231122154147A064.p0ddmp9lpog.jpg" alt="图片"></p>
 </body></html>]]></content>
       <categories>
         <category>Zabbix</category>
@@ -382,20 +409,26 @@
 <p>•执行一下脚本是否有效</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line"># ./qiYeWeiXinPush.sh zabbix 标题 内容</span><br><span class="line">{"errcode":0,"errmsg":"ok"}</span><br></pre></td></tr></tbody></table></figure>
 
-<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/8dab0c0a177f72fa3aba8f5537e03b9a_image_20231122155808A067.png" alt="8dab0c0a177f72fa3aba8f5537e03b9a_image_20231122155808A067"></p>
-<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/0ee51557ba6b349e78d81ec508df6ac0_image_20231122155330A065.png" alt="0ee51557ba6b349e78d81ec508df6ac0_image_20231122155330A065"></p>
+<!-- ![8dab0c0a177f72fa3aba8f5537e03b9a_image_20231122155808A067](/temp/zabbix预警后通过企业微信机器人发送通知/8dab0c0a177f72fa3aba8f5537e03b9a_image_20231122155808A067.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/8dab0c0a177f72fa3aba8f5537e03b9a_image_20231122155808A067.4o6kgmx102o0.jpg" alt="图片"></p>
+<!-- ![0ee51557ba6b349e78d81ec508df6ac0_image_20231122155330A065](/temp/zabbix预警后通过企业微信机器人发送通知/0ee51557ba6b349e78d81ec508df6ac0_image_20231122155330A065.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/0ee51557ba6b349e78d81ec508df6ac0_image_20231122155330A065.28vw513e72jo.jpg" alt="图片"></p>
 <h1 id="2-zabbixweb端配置"><a href="#2-zabbixweb端配置" class="headerlink" title="2.zabbixweb端配置"></a>2.zabbixweb端配置</h1><p>•管理-报警媒介类型-创建媒介类型</p>
 <p>•脚本名称是‘alertscripts’文件夹下面的脚本文件名</p>
 <p>•添加三个脚本参数，脚本后面这三个</p>
-<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/d0c2c91a55881232a2537cbabc578f53_image_20231122160022A070.png" alt="d0c2c91a55881232a2537cbabc578f53_image_20231122160022A070"></p>
+<!-- ![d0c2c91a55881232a2537cbabc578f53_image_20231122160022A070](/temp/zabbix预警后通过企业微信机器人发送通知/d0c2c91a55881232a2537cbabc578f53_image_20231122160022A070.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/d0c2c91a55881232a2537cbabc578f53_image_20231122160022A070.msm622lhocw.jpg" alt="图片"></p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">{ALERT.SENDTO}</span><br><span class="line">{ALERT.SUBJECT}</span><br><span class="line">{ALERT.MESSAGE}</span><br></pre></td></tr></tbody></table></figure>
 
-<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/52ab8f893f7e15a9fd6ea77f1f905350_image_20231122155848A068.png" alt="52ab8f893f7e15a9fd6ea77f1f905350_image_20231122155848A068"></p>
+<!-- ![52ab8f893f7e15a9fd6ea77f1f905350_image_20231122155848A068](/temp/zabbix预警后通过企业微信机器人发送通知/52ab8f893f7e15a9fd6ea77f1f905350_image_20231122155848A068.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/52ab8f893f7e15a9fd6ea77f1f905350_image_20231122155848A068.25a7rim9iphc.jpg" alt="图片"></p>
 <p>创建动作</p>
 <p>•配置-动作-<a href="javascript:void(0)">Trigger actions</a>-创建动作</p>
-<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/f4a7a8d84ca9318e102050e49202a5da_image_20231122160108A071.png" alt="f4a7a8d84ca9318e102050e49202a5da_image_20231122160108A071"></p>
+<!-- ![f4a7a8d84ca9318e102050e49202a5da_image_20231122160108A071](/temp/zabbix预警后通过企业微信机器人发送通知/f4a7a8d84ca9318e102050e49202a5da_image_20231122160108A071.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/f4a7a8d84ca9318e102050e49202a5da_image_20231122160108A071.352m7urmmx00.jpg" alt="图片"></p>
 <p>选择触发当前动作的触发器</p>
-<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/3b37c7be95ed6c83f32071150c6720de_image_20231122160259A072.png" alt="3b37c7be95ed6c83f32071150c6720de_image_20231122160259A072"></p>
+<!-- ![3b37c7be95ed6c83f32071150c6720de_image_20231122160259A072](/temp/zabbix预警后通过企业微信机器人发送通知/3b37c7be95ed6c83f32071150c6720de_image_20231122160259A072.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/3b37c7be95ed6c83f32071150c6720de_image_20231122160259A072.46o06d24sx40.jpg" alt="图片"></p>
 <p>添加操作，选择以后群组跟用户，勾选Custom message 自定义消息</p>
 <p>•主题</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">故障{TRIGGER.STATUS},服务器:{HOSTNAME1}发生:{TRIGGER.NAME}故障! 故障通知！！</span><br></pre></td></tr></tbody></table></figure>
@@ -403,7 +436,8 @@
 <p>•消息</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">&gt;告警主机:&lt;font color=\"comment\"&gt;{HOSTNAME1}&lt;/font&gt;</span><br><span class="line">&gt;IP地址：&lt;font color=\"comment\"&gt;{HOST.CONN} &lt;/font&gt;</span><br><span class="line">&gt;告警时间:&lt;font color=\"comment\"&gt;{EVENT.DATE} {EVENT.TIME}(UTC)&lt;/font&gt;</span><br><span class="line">&gt;告警等级:&lt;font color=\"comment\"&gt;{TRIGGER.SEVERITY}&lt;/font&gt;</span><br><span class="line">&gt;告警信息: &lt;font color=\"comment\"&gt;{TRIGGER.NAME}&lt;/font&gt;</span><br><span class="line">&gt;告警项目:&lt;font color=\"comment\"&gt;{TRIGGER.KEY1}&lt;/font&gt;</span><br><span class="line">&gt;问题详情:&lt;font color=\"comment\"&gt;{ITEM.NAME}:{ITEM.VALUE}&lt;/font&gt;</span><br><span class="line">&gt;当前状态:&lt;font color=\"comment\"&gt;{TRIGGER.STATUS}:{ITEM.VALUE1}&lt;/font&gt;</span><br><span class="line">&gt;事件ID:&lt;font color=\"comment\"&gt;{EVENT.ID}&lt;/font&gt;</span><br></pre></td></tr></tbody></table></figure>
 
-<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/66ef83c319aeea8a118e0f74d800b135_image_20231122160424A073.png" alt="66ef83c319aeea8a118e0f74d800b135_image_20231122160424A073"></p>
+<!-- ![66ef83c319aeea8a118e0f74d800b135_image_20231122160424A073](/temp/zabbix预警后通过企业微信机器人发送通知/66ef83c319aeea8a118e0f74d800b135_image_20231122160424A073.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/66ef83c319aeea8a118e0f74d800b135_image_20231122160424A073.4qbdbxg6yx60.jpg" alt="图片"></p>
 <p>添加故障恢复时的操作</p>
 <p>•主题</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">恢复{TRIGGER.STATUS},服务器:{HOSTNAME1}:{TRIGGER.NAME}已恢复！！</span><br></pre></td></tr></tbody></table></figure>
@@ -411,22 +445,30 @@
 <p>•消息</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">&gt;告警主机:&lt;font color=\"comment\"&gt;{HOSTNAME1}&lt;/font&gt;</span><br><span class="line">&gt;IP地址：&lt;font color=\"comment\"&gt;{HOST.CONN} &lt;/font&gt;</span><br><span class="line">&gt;告警时间:&lt;font color=\"comment\"&gt;{EVENT.DATE} {EVENT.TIME}(UTC)&lt;/font&gt;</span><br><span class="line">&gt;告警等级:&lt;font color=\"comment\"&gt;{TRIGGER.SEVERITY}&lt;/font&gt;</span><br><span class="line">&gt;告警信息: &lt;font color=\"comment\"&gt;{TRIGGER.NAME}&lt;/font&gt;</span><br><span class="line">&gt;告警项目:&lt;font color=\"comment\"&gt;{TRIGGER.KEY1}&lt;/font&gt;</span><br><span class="line">&gt;问题详情:&lt;font color=\"comment\"&gt;{ITEM.NAME}:{ITEM.VALUE}&lt;/font&gt;</span><br><span class="line">&gt;当前状态:&lt;font color=\"comment\"&gt;{TRIGGER.STATUS}:{ITEM.VALUE1}&lt;/font&gt;</span><br><span class="line">&gt;事件ID:&lt;font color=\"comment\"&gt;{EVENT.ID}&lt;/font&gt;</span><br></pre></td></tr></tbody></table></figure>
 
-<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/fdb4f7cb71e80e3aa92aacc2c4ec1406_image_20231122160624A074.png" alt="fdb4f7cb71e80e3aa92aacc2c4ec1406_image_20231122160624A074"></p>
+<!-- ![fdb4f7cb71e80e3aa92aacc2c4ec1406_image_20231122160624A074](/temp/zabbix预警后通过企业微信机器人发送通知/fdb4f7cb71e80e3aa92aacc2c4ec1406_image_20231122160624A074.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/fdb4f7cb71e80e3aa92aacc2c4ec1406_image_20231122160624A074.30jgn5urcwi0.jpg" alt="图片"></p>
 <p>执行添加</p>
-<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/8f2e0e0e78b5971b0385d05ddd45eac7_image_20231122160726A075.png" alt="8f2e0e0e78b5971b0385d05ddd45eac7_image_20231122160726A075"></p>
+<!-- ![8f2e0e0e78b5971b0385d05ddd45eac7_image_20231122160726A075](/temp/zabbix预警后通过企业微信机器人发送通知/8f2e0e0e78b5971b0385d05ddd45eac7_image_20231122160726A075.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/8f2e0e0e78b5971b0385d05ddd45eac7_image_20231122160726A075.2mpj2oki2dg0.jpg" alt="图片"></p>
 <p>创建用户报警媒介</p>
 <p>•管理-用户-Admin-报警媒介</p>
 <p>•添加报警媒介</p>
 <p>•类型选择刚刚创建的媒介类型，收件人是执行脚本时的第一个参数</p>
 <p>•添加-更新</p>
-<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/e01cbf7e10a1a60591dab6c1eb6eac4a_image_20231122160840A076.png" alt="e01cbf7e10a1a60591dab6c1eb6eac4a_image_20231122160840A076"></p>
+<!-- ![e01cbf7e10a1a60591dab6c1eb6eac4a_image_20231122160840A076](/temp/zabbix预警后通过企业微信机器人发送通知/e01cbf7e10a1a60591dab6c1eb6eac4a_image_20231122160840A076.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/e01cbf7e10a1a60591dab6c1eb6eac4a_image_20231122160840A076.78z96n7azss0.jpg" alt="图片"></p>
 <p>3.效果</p>
-<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/3504c3d1317f092f3403a5518d39dbf2_image_20231122161244A079.png" alt="3504c3d1317f092f3403a5518d39dbf2_image_20231122161244A079"></p>
-<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/7ebf978c8f66d7647581f6df71a01447_image_20231122161218A077.png" alt="7ebf978c8f66d7647581f6df71a01447_image_20231122161218A077"></p>
-<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/a0f1a40f93ad24532c34d5922f7efb20_image_20231122161231A078.png" alt="a0f1a40f93ad24532c34d5922f7efb20_image_20231122161231A078"></p>
+<!-- ![3504c3d1317f092f3403a5518d39dbf2_image_20231122161244A079](/temp/zabbix预警后通过企业微信机器人发送通知/3504c3d1317f092f3403a5518d39dbf2_image_20231122161244A079.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/3504c3d1317f092f3403a5518d39dbf2_image_20231122161244A079.79f0c5207vc0.jpg" alt="图片"></p>
+<!-- ![7ebf978c8f66d7647581f6df71a01447_image_20231122161218A077](/temp/zabbix预警后通过企业微信机器人发送通知/7ebf978c8f66d7647581f6df71a01447_image_20231122161218A077.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/7ebf978c8f66d7647581f6df71a01447_image_20231122161218A077.3qai16r6e840.jpg" alt="图片"></p>
+<!-- ![a0f1a40f93ad24532c34d5922f7efb20_image_20231122161231A078](/temp/zabbix预警后通过企业微信机器人发送通知/a0f1a40f93ad24532c34d5922f7efb20_image_20231122161231A078.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/a0f1a40f93ad24532c34d5922f7efb20_image_20231122161231A078.hbakx5yyhe0.jpg" alt="图片"></p>
 <p>故障恢复后发送的通知</p>
-<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/53fd71e7aed5cfd159787fddf8919c28_image_20231122161536A080.png" alt="53fd71e7aed5cfd159787fddf8919c28_image_20231122161536A080"></p>
-<p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/e6d93247129af9c7d566fe8c9666c4b4_image_20231122161608A081.png" alt="e6d93247129af9c7d566fe8c9666c4b4_image_20231122161608A081"></p>
+<!-- ![53fd71e7aed5cfd159787fddf8919c28_image_20231122161536A080](/temp/zabbix预警后通过企业微信机器人发送通知/53fd71e7aed5cfd159787fddf8919c28_image_20231122161536A080.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/53fd71e7aed5cfd159787fddf8919c28_image_20231122161536A080.1q3xquh0o4u8.jpg" alt="图片"></p>
+<!-- ![e6d93247129af9c7d566fe8c9666c4b4_image_20231122161608A081](/temp/zabbix预警后通过企业微信机器人发送通知/e6d93247129af9c7d566fe8c9666c4b4_image_20231122161608A081.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/e6d93247129af9c7d566fe8c9666c4b4_image_20231122161608A081.1ms3u9nkrbeo.jpg" alt="图片"></p>
 </body></html>]]></content>
       <categories>
         <category>Zabbix</category>
@@ -488,24 +530,31 @@
 <p><code>https://www.ikuai8.com/component/download</code></p>
 <p>本次教程使用腾讯云服务器进行安装，无需下载通过上面下载链接下载镜像</p>
 <p>1.准备一台ubuntu系统的服务器<br>2.下载ISO安装包<br>x32位<br><code>wget https://www.ikuai8.com/download.php?n=/3.x/iso/iKuai8_x32_3.5.11_Build202112031159.iso -O ikuai8.iso</code><br>x64位<br><code>wget https://www.ikuai8.com/download.php?n=/3.x/iso/iKuai8_x64_3.5.11_Build202112031159.iso -O ikuai8.iso</code><br>安装版本 iKuai8_x64_3.5.11_Build202112031159.iso 可通过历史日志 选择对应版本进行下载 _x64或_x32 需要指定是安装64位还是32位的镜像</p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/1.png" alt="1"></p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/2.png" alt="2"></p>
+<!-- ![1](/temp/通过ikuai搭建openVPN实现异地组网/1.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/1.66tok7wtpxc0.jpg" alt="图片"></p>
+<!-- ![2](/temp/通过ikuai搭建openVPN实现异地组网/2.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/2.1w0mb1hgnozk.jpg" alt="图片"></p>
 <p>这里演示安装的是最新版的 版本号是</p>
 <p><code>wget https://www.ikuai8.com/download.php?n=/3.x/iso/iKuai8_x64_3.6.12_Build202212231532.iso -O ikuai8.iso</code></p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/3.png" alt="3"></p>
+<!-- ![3](/temp/通过ikuai搭建openVPN实现异地组网/3.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/3.755b1y1xxp00.jpg" alt="图片"></p>
 <p>连上服务器输入下载镜像命令</p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/4.png" alt="4"></p>
+<!-- ![4](/temp/通过ikuai搭建openVPN实现异地组网/4.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/4.23pi0j5bruio.jpg" alt="图片"></p>
 <p>等待下载完成</p>
 <p>3.挂载ISO镜像</p>
 <p><code>sudo mount ikuai8.iso /mnt</code></p>
 <p>4.复制ISO镜像启动文件</p>
 <p><code>sudo cp -rpf /mnt/boot /</code></p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/5.png" alt="5"></p>
+<!-- ![5](/temp/通过ikuai搭建openVPN实现异地组网/5.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/5.3tuzvdzoua00.jpg" alt="图片"></p>
 <p>5.重启服务器</p>
 <p>6.使用VNC连接服务器</p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/6.png" alt="6"></p>
+<!-- ![6](/temp/通过ikuai搭建openVPN实现异地组网/6.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/6.1xh3mtok4wo0.jpg" alt="图片"></p>
 <p>7.按提示安装ikuai</p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/7.png" alt="7"></p>
+<!-- ![7](/temp/通过ikuai搭建openVPN实现异地组网/7.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/7.2mkialsxc4e0.jpg" alt="图片"></p>
 <p>到此界面ikuai就算安装完成了</p>
 <p>但是现在ikuai系统是无法联网跟无法使用外网访问web端的</p>
 <p>8.设置网卡绑定</p>
@@ -514,36 +563,47 @@
 <li>输入 del lan1 eth0 删除默认绑定的lan1口</li>
 <li>输入 set wan1 eth0 绑定wan1口</li>
 </ol>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/8.png" alt="8"></p>
+<!-- ![8](/temp/通过ikuai搭建openVPN实现异地组网/8.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/8.7e6mr8iiez00.jpg" alt="图片"></p>
 <p>输入q返回上一级</p>
 <p>9.开启外网访问web端</p>
 <ol>
 <li>进入菜单 o</li>
 <li>输入 2</li>
 </ol>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/9.png" alt="9"></p>
+<!-- ![9](/temp/通过ikuai搭建openVPN实现异地组网/9.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/9.2yljwivrdxk0.jpg" alt="图片"></p>
 <p>此时浏览器输入公网IP就能访问ikuai的web管理页面了<br>ikuai默认账号密码admin/admin</p>
 <p>10.配置openVPN服务端<br>登录web端后依次点击菜单 认证计费-本地认证服务-OpenVPN服务端</p>
 <p>点击开启OpenVPN服务端</p>
 <p>拉倒页面最下面点击保存</p>
 <p>左上角有一个 到处windows客户端配置 的按钮，先把配置导出来，后面要用到</p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/10.png" alt="10"></p>
+<!-- ![10](/temp/通过ikuai搭建openVPN实现异地组网/10.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/10.5r15fu3kcb00.jpg" alt="图片"></p>
 <p>然后进入菜单 认证计费-认证账号管理-账号管理 新增一个测试用户</p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/11.png" alt="11"></p>
+<!-- ![11](/temp/通过ikuai搭建openVPN实现异地组网/11.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/11.6q9grv6op4g0.jpg" alt="图片"></p>
 <p>新增账号配置</p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/12.png" alt="12"></p>
+<!-- ![12](/temp/通过ikuai搭建openVPN实现异地组网/12.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/12.29ei373vaxes.jpg" alt="图片"></p>
 <h3 id="安装使用openVPN客户端"><a href="#安装使用openVPN客户端" class="headerlink" title="安装使用openVPN客户端"></a>安装使用openVPN客户端</h3><p>打开从ikuai里面导出的conf文件打开修改公网IP</p>
 <p>然后将后缀conf改成ovpn</p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/13.png" alt="13"></p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/14.png" alt="14"></p>
+<!-- ![13](/temp/通过ikuai搭建openVPN实现异地组网/13.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/13.b23uc7gbja8.jpg" alt="图片"></p>
+<!-- ![14](/temp/通过ikuai搭建openVPN实现异地组网/14.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/14.71u5ymsioeo0.jpg" alt="图片"></p>
 <p>打开后鼠标右击任务栏图标 选择 导入-导入配置文件 导入配置文件</p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/15.png" alt="15"></p>
+<!-- ![15](/temp/通过ikuai搭建openVPN实现异地组网/15.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/15.5oetm2usm100.jpg" alt="图片"></p>
 <p>导入后右击连接</p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/16.png" alt="16"></p>
+<!-- ![16](/temp/通过ikuai搭建openVPN实现异地组网/16.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/16.7cx53ptba440.jpg" alt="图片"></p>
 <p>此时会需要输入在ikuai新增的账号密码 点击确认开始连接</p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/17.png" alt="17"></p>
+<!-- ![17](/temp/通过ikuai搭建openVPN实现异地组网/17.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/17.22azkxokg57k.jpg" alt="图片"></p>
 <p>右下角任务栏图标变成绿色即连接成功</p>
-<p><img src="/temp/%E9%80%9A%E8%BF%87ikuai%E6%90%AD%E5%BB%BAopenVPN%E5%AE%9E%E7%8E%B0%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/18.png" alt="18"></p>
+<!-- ![18](/temp/通过ikuai搭建openVPN实现异地组网/18.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/18.5ry4wyupwkw0.jpg" alt="图片"></p>
 <p>鼠标悬浮上可以看到刚刚给当前登录以后固定的内网ip</p>
 <p>此时可以输入192.168.100.0 通过内网打开ikuai web端</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">注意：不能吧用户IP固定成xxx.xxx.xxx.1 因为.1会分配给ikuai的服务器，导致在内网IP分配问题</span><br></pre></td></tr></tbody></table></figure>
