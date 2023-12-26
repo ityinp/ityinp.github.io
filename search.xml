@@ -6,6 +6,9 @@
     <content><![CDATA[<html><head></head><body><figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">try</span> {</span><br><span class="line">	<span class="comment">/** 将压缩分辨率设置为1080P */</span></span><br><span class="line">	<span class="type">double</span> <span class="variable">compressionResolution</span> <span class="operator">=</span> <span class="number">1920.00</span>;</span><br><span class="line">	<span class="comment">/** 源图片路径 */</span></span><br><span class="line">	<span class="type">String</span> <span class="variable">sourcePicturePath</span> <span class="operator">=</span> <span class="string">"d:\\图片压缩\\1.png"</span>;</span><br><span class="line">	<span class="comment">/** 压缩后保存图片的路径 */</span></span><br><span class="line">	<span class="type">String</span> <span class="variable">compressedPicturePath</span> <span class="operator">=</span> <span class="string">"d:\\图片压缩\\2.png"</span>;</span><br><span class="line"></span><br><span class="line">	<span class="comment">/** 获取要压缩的文件 */</span></span><br><span class="line">	<span class="type">File</span> <span class="variable">file</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">File</span>(sourcePicturePath);</span><br><span class="line">	<span class="comment">/** 将文件转图片 */</span></span><br><span class="line">	<span class="type">BufferedImage</span> <span class="variable">sourceImg</span> <span class="operator">=</span> ImageIO.read(<span class="keyword">new</span> <span class="title class_">FileInputStream</span>(file));</span><br><span class="line">	<span class="comment">/** 获取图片的宽高 */</span></span><br><span class="line">	<span class="type">int</span> <span class="variable">width</span> <span class="operator">=</span> sourceImg.getWidth();</span><br><span class="line">	<span class="type">int</span> <span class="variable">height</span> <span class="operator">=</span> sourceImg.getHeight();</span><br><span class="line">	System.out.println(String.format(<span class="string">"源图片宽[%s] 高[%s]"</span>, width, height));</span><br><span class="line"></span><br><span class="line">	<span class="comment">/** 分辨率小于要压缩的分辨率时不压缩 */</span></span><br><span class="line">	<span class="keyword">if</span> (width &lt;= compressionResolution) {</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	}</span><br><span class="line"></span><br><span class="line">	<span class="comment">/** 计算压缩的倍率 */</span></span><br><span class="line">	<span class="type">double</span> <span class="variable">compressionRatio</span> <span class="operator">=</span> width / compressionResolution;</span><br><span class="line">            </span><br><span class="line">	<span class="comment">/** 计算压缩后的宽高 */</span></span><br><span class="line">	width = (<span class="type">int</span>) (width / compressionRatio);</span><br><span class="line">	height = (<span class="type">int</span>) (height / compressionRatio);</span><br><span class="line"></span><br><span class="line">	System.out.println(String.format(<span class="string">"压缩后图片宽[%s] 高[%s]"</span>, width, height));</span><br><span class="line"></span><br><span class="line">	<span class="comment">/** 开始压缩 */</span></span><br><span class="line">	Thumbnails.of(file)</span><br><span class="line">		.size(width, height)</span><br><span class="line">		.toFile(<span class="keyword">new</span> <span class="title class_">File</span>(compressedPicturePath));</span><br><span class="line"></span><br><span class="line">} <span class="keyword">catch</span> (Exception e) {</span><br><span class="line">	<span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">RuntimeException</span>(<span class="string">"压缩图片失败"</span>);</span><br><span class="line">}</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
 
 </body></html>]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
       <tags>
         <tag>Java</tag>
       </tags>
@@ -27,8 +30,12 @@
 <p><img src="/temp/Linux%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A0%81/1da2594014b62e44e7574265523802b2_131e9843d6f63a5992e0d4ef92d357f9_e47c7f625fba42208e0f0f7536bd39ff_20230926164257A376.jpg" alt="1da2594014b62e44e7574265523802b2_131e9843d6f63a5992e0d4ef92d357f9_e47c7f625fba42208e0f0f7536bd39ff_20230926164257A376"></p>
 <p>（注：图中左边的提示点为要输入的命令）</p>
 </body></html>]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
       <tags>
         <tag>linux</tag>
+        <tag>密码</tag>
       </tags>
   </entry>
   <entry>
@@ -39,8 +46,13 @@
 <h5 id="如果发现没有启动成功，可以使用-nps-exe-stop，然后运行-nps-exe-运行调试，或查看日志-Windows-日志文件位于当前运行目录下，linux-和-darwin-位于-var-log-nps-log"><a href="#如果发现没有启动成功，可以使用-nps-exe-stop，然后运行-nps-exe-运行调试，或查看日志-Windows-日志文件位于当前运行目录下，linux-和-darwin-位于-var-log-nps-log" class="headerlink" title="如果发现没有启动成功，可以使用 nps(.exe) stop，然后运行 nps.(exe) 运行调试，或查看日志 (Windows 日志文件位于当前运行目录下，linux 和 darwin 位于 /var/log/nps.log)"></a>如果发现没有启动成功，可以使用 nps(.exe) stop，然后运行 nps.(exe) 运行调试，或查看日志 (Windows 日志文件位于当前运行目录下，linux 和 darwin 位于 /var/log/nps.log)</h5><p>　　问服务端 ip:web 服务端口（默认为 8080）<br>　　使用用户名和密码登陆（默认 admin/123，正式使用一定要更改）<br>　　创建客户端</p>
 <h3 id="客户端注册到系统服务-开机启动、守护进程"><a href="#客户端注册到系统服务-开机启动、守护进程" class="headerlink" title="客户端注册到系统服务 (开机启动、守护进程)"></a>客户端注册到系统服务 (开机启动、守护进程)</h3><p>对于 linux、darwin<br>　　注册： <font color="#FF00FF">sudo ./npc install</font>  其他参数（例如-server=xx -vkey=xx或者-config=xxx）<br>　　启动： <font color="#FF00FF">sudo npc start</font><br>　　停止： <font color="#FF00FF">sudo npc stop</font><br>　　如果需要更换命令内容需要先卸载./npc uninstall，再重新注册<br>　　对于 windows，使用管理员身份运行 cmd<br>　　注册： <font color="#FF00FF">npc.exe install </font> 其他参数（例如-server=xx -vkey=xx或者-config=xxx）<br>　　启动： <font color="#FF00FF">npc.exe start</font><br>　　停止： <font color="#FF00FF">npc.exe stop</font><br>　　如果需要更换命令内容需要先卸载 npc.exe uninstall，再重新注册<br>　　如果需要当客户端退出时自动重启客户端，请按照如图所示配置<br><img src="/temp/NPS%E6%9C%8D%E5%8A%A1%E7%AB%AF%E8%B7%9F%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84%E9%85%8D%E7%BD%AE/1.png" alt="1"><br>注册到服务后，日志文件 windows 位于当前目录下，linux 和 darwin 位于 /var/log/npc.log</p>
 </body></html>]]></content>
+      <categories>
+        <category>内网穿透</category>
+      </categories>
       <tags>
         <tag>内网穿透</tag>
+        <tag>NPS</tag>
+        <tag>NPC</tag>
       </tags>
   </entry>
   <entry>
@@ -55,8 +67,12 @@
 <p>永久禁止防火墙启动：</p>
 <figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line">systemctl disable firewalld.service</span><br></pre></td></tr></tbody></table></figure>
 </body></html>]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
       <tags>
         <tag>linux</tag>
+        <tag>防火墙</tag>
       </tags>
   </entry>
   <entry>
@@ -80,8 +96,12 @@
 
 <p>4、重启网络：</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">service network restart</span><br><span class="line">Restarting network (via systemctl):                        [  OK  ]</span><br></pre></td></tr></tbody></table></figure></body></html>]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
       <tags>
         <tag>linux</tag>
+        <tag>cetnos7</tag>
       </tags>
   </entry>
   <entry>
@@ -106,6 +126,9 @@
 <p><img src="/temp/zabbixweb%E7%AB%AF%E9%85%8D%E7%BD%AE%E4%B8%BB%E6%9C%BA%E7%9B%91%E6%8E%A7/781061895efd6d92184ea867704ebad9_image_20231122145313A054.png" alt="781061895efd6d92184ea867704ebad9_image_20231122145313A054"></p>
 <p><img src="/temp/zabbixweb%E7%AB%AF%E9%85%8D%E7%BD%AE%E4%B8%BB%E6%9C%BA%E7%9B%91%E6%8E%A7/7e2e85b480d974fea0433f3b134adc71_image_20231122145359A055.png" alt="7e2e85b480d974fea0433f3b134adc71_image_20231122145359A055"></p>
 </body></html>]]></content>
+      <categories>
+        <category>Zabbix</category>
+      </categories>
       <tags>
         <tag>zabbix</tag>
       </tags>
@@ -146,6 +169,9 @@
 <figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">#目录下有simkai.ttf这个新上传的文件</span><br><span class="line">[root@localhost ~]# ll /data/web/assets/fonts</span><br><span class="line">总用量 12252</span><br><span class="line">-rw-r--r-- 1 zabbix zabbix   756072 2月  28 2022 DejaVuSans.ttf</span><br><span class="line">-rw-r--r-- 1 root   root   11787328 11月 22 10:20 simkai.ttf</span><br><span class="line">#替换配置文件中的默认字体</span><br><span class="line">[root@localhost ~]# sed -i 's/DejaVuSans/simkai/g' /data/web/include/defines.inc.php</span><br><span class="line">#如果这里之前是修改了网页路径的话，到自己的路径下找include/defines.inc.php即可</span><br></pre></td></tr></tbody></table></figure>
 
 </body></html>]]></content>
+      <categories>
+        <category>Zabbix</category>
+      </categories>
       <tags>
         <tag>zabbix</tag>
       </tags>
@@ -290,6 +316,9 @@
 </tr>
 </tbody></table>
 </body></html>]]></content>
+      <categories>
+        <category>Zabbix</category>
+      </categories>
       <tags>
         <tag>zabbix</tag>
       </tags>
@@ -308,6 +337,31 @@
 <p>查看监控图形</p>
 <p><img src="/temp/zabbix%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9B%91%E6%8E%A7%E9%A1%B9/8892163b0ce1338a5090cf83ac113cc9_image_20231122151023A059.png" alt="8892163b0ce1338a5090cf83ac113cc9_image_20231122151023A059"></p>
 </body></html>]]></content>
+      <categories>
+        <category>Zabbix</category>
+      </categories>
+      <tags>
+        <tag>zabbix</tag>
+        <tag>监控项</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>zabbix配置触发器</title>
+    <url>/863a3196.html</url>
+    <content><![CDATA[<html><head></head><body><p>创建触发器</p>
+<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/e712b575071b5fcec0b6803b94a3fa03_image_20231122153511A060.png" alt="e712b575071b5fcec0b6803b94a3fa03_image_20231122153511A060"></p>
+<p>添加表达式，选择监控项，这里去最近的值，监控CPU返回的占用大于10就进行报警，处理器使用率监控返回最大值为100</p>
+<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/bcee0a996fd3c739d2a12c25f374a4c3_image_20231122153708A061.png" alt="bcee0a996fd3c739d2a12c25f374a4c3_image_20231122153708A061"></p>
+<p>添加完成</p>
+<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/c853b937174569d0bddfeb7f81e9f859_image_20231122153912A062.png" alt="c853b937174569d0bddfeb7f81e9f859_image_20231122153912A062"></p>
+<p>触发一下CPU过高，监测可以看到预警线</p>
+<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/32036db396a995f46f1867ab259af33d_image_20231122154057A063.png" alt="32036db396a995f46f1867ab259af33d_image_20231122154057A063"></p>
+<p>监测-问题可以看到已经出发预警了</p>
+<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/7ac96f2539771f599811bca247ab50df_image_20231122154147A064.png" alt="7ac96f2539771f599811bca247ab50df_image_20231122154147A064"></p>
+</body></html>]]></content>
+      <categories>
+        <category>Zabbix</category>
+      </categories>
       <tags>
         <tag>zabbix</tag>
       </tags>
@@ -374,26 +428,12 @@
 <p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/53fd71e7aed5cfd159787fddf8919c28_image_20231122161536A080.png" alt="53fd71e7aed5cfd159787fddf8919c28_image_20231122161536A080"></p>
 <p><img src="/temp/zabbix%E9%A2%84%E8%AD%A6%E5%90%8E%E9%80%9A%E8%BF%87%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5/e6d93247129af9c7d566fe8c9666c4b4_image_20231122161608A081.png" alt="e6d93247129af9c7d566fe8c9666c4b4_image_20231122161608A081"></p>
 </body></html>]]></content>
+      <categories>
+        <category>Zabbix</category>
+      </categories>
       <tags>
         <tag>zabbix</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>zabbix配置触发器</title>
-    <url>/863a3196.html</url>
-    <content><![CDATA[<html><head></head><body><p>创建触发器</p>
-<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/e712b575071b5fcec0b6803b94a3fa03_image_20231122153511A060.png" alt="e712b575071b5fcec0b6803b94a3fa03_image_20231122153511A060"></p>
-<p>添加表达式，选择监控项，这里去最近的值，监控CPU返回的占用大于10就进行报警，处理器使用率监控返回最大值为100</p>
-<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/bcee0a996fd3c739d2a12c25f374a4c3_image_20231122153708A061.png" alt="bcee0a996fd3c739d2a12c25f374a4c3_image_20231122153708A061"></p>
-<p>添加完成</p>
-<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/c853b937174569d0bddfeb7f81e9f859_image_20231122153912A062.png" alt="c853b937174569d0bddfeb7f81e9f859_image_20231122153912A062"></p>
-<p>触发一下CPU过高，监测可以看到预警线</p>
-<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/32036db396a995f46f1867ab259af33d_image_20231122154057A063.png" alt="32036db396a995f46f1867ab259af33d_image_20231122154057A063"></p>
-<p>监测-问题可以看到已经出发预警了</p>
-<p><img src="/temp/zabbix%E9%85%8D%E7%BD%AE%E8%A7%A6%E5%8F%91%E5%99%A8/7ac96f2539771f599811bca247ab50df_image_20231122154147A064.png" alt="7ac96f2539771f599811bca247ab50df_image_20231122154147A064"></p>
-</body></html>]]></content>
-      <tags>
-        <tag>zabbix</tag>
+        <tag>企业微信机器人通知</tag>
       </tags>
   </entry>
   <entry>
@@ -404,6 +444,9 @@
 
 <p>2.修改zabbix-agent配置文件</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><span class="line"># vim /etc/zabbix/zabbix_agentd.<span class="property">conf</span></span><br><span class="line"><span class="title class_">Server</span>=<span class="string">"ZabbixServerIP"</span></span><br><span class="line"><span class="title class_">ServerActive</span>=<span class="string">"ZabbixServerIP"</span></span><br><span class="line"><span class="title class_">Hostname</span>=<span class="string">"本机主机名，在zabbix-web端配置主机时需要填写”</span></span><br><span class="line"><span class="string">重启服务：</span></span><br><span class="line"><span class="string"># systemctl restart zabbix-agent</span></span><br></pre></td></tr></tbody></table></figure></body></html>]]></content>
+      <categories>
+        <category>Zabbix</category>
+      </categories>
       <tags>
         <tag>zabbix</tag>
       </tags>
@@ -430,8 +473,12 @@
 <p>mybatisTransactionManager跟mongoTransactionManager表示同时启用数据mybatis操作的数据库跟MongoDB同时开启事务同时提交事务</p>
 <figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@MultiTransactional(value = {"mybatisTransactionManager", "mongoTransactionManager"})</span></span><br></pre></td></tr></tbody></table></figure>
 </body></html>]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
       <tags>
         <tag>Java</tag>
+        <tag>事务</tag>
       </tags>
   </entry>
   <entry>
@@ -501,8 +548,14 @@
 <p>此时可以输入192.168.100.0 通过内网打开ikuai web端</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">注意：不能吧用户IP固定成xxx.xxx.xxx.1 因为.1会分配给ikuai的服务器，导致在内网IP分配问题</span><br></pre></td></tr></tbody></table></figure>
 </body></html>]]></content>
+      <categories>
+        <category>VPN</category>
+      </categories>
       <tags>
         <tag>VPN</tag>
+        <tag>爱快</tag>
+        <tag>ikuai</tag>
+        <tag>openVpn</tag>
       </tags>
   </entry>
 </search>
