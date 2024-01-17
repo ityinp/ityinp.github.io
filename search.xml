@@ -58,6 +58,21 @@
       </tags>
   </entry>
   <entry>
+    <title>PicX一个基于web页面的GitHub图床工具</title>
+    <url>/cffd4bc3.html</url>
+    <content><![CDATA[<html><head></head><body><figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">链接 https://picx.xpoet.cn/</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<h3 id="配置GitHub的token"><a href="#配置GitHub的token" class="headerlink" title="配置GitHub的token"></a>配置GitHub的token</h3><p><img src="https://cdn.jsdelivr.net/gh/ityinp/hexoBlog-images@main/root/image-20240117142241714.30qjv25nct60.webp" alt="image-20240117142241714"></p>
+<h3 id="选择仓库跟分支，然后在选择一个图片上传的目录-点击确认"><a href="#选择仓库跟分支，然后在选择一个图片上传的目录-点击确认" class="headerlink" title="选择仓库跟分支，然后在选择一个图片上传的目录 点击确认"></a>选择仓库跟分支，然后在选择一个图片上传的目录 点击确认</h3><p><img src="https://cdn.jsdelivr.net/gh/ityinp/hexoBlog-images@main/root/image-20240117142335465.5ill48hpql00.webp" alt="image-20240117142335465"></p>
+<h3 id="上传图片"><a href="#上传图片" class="headerlink" title="上传图片"></a>上传图片</h3><p><img src="https://cdn.jsdelivr.net/gh/ityinp/hexoBlog-images@main/root/image-20240117142411992.62gfo429bw80.webp" alt="image-20240117142411992"></p>
+</body></html>]]></content>
+      <tags>
+        <tag>图床</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>centos7 关闭防火墙</title>
     <url>/1fa40c40.html</url>
     <content><![CDATA[<html><head></head><body><p>查看防火墙状态：</p>
