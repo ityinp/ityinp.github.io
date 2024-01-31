@@ -14,25 +14,6 @@
       </tags>
   </entry>
   <entry>
-    <title>NPS服务端跟客户端的配置</title>
-    <url>/8284fff5.html</url>
-    <content><![CDATA[<html><head></head><body><h1 id="NPS-服务端跟客户端的配置"><a href="#NPS-服务端跟客户端的配置" class="headerlink" title="NPS 服务端跟客户端的配置"></a>NPS 服务端跟客户端的配置</h1><h2 id="服务端使用"><a href="#服务端使用" class="headerlink" title="服务端使用"></a>服务端使用</h2><h3 id="服务端-linux-darwin-安装"><a href="#服务端-linux-darwin-安装" class="headerlink" title="服务端 linux|darwin 安装"></a>服务端 linux|darwin 安装</h3><h4 id="下载完服务器压缩包后，解压，然后进入解压后的文件夹-执行安装命令"><a href="#下载完服务器压缩包后，解压，然后进入解压后的文件夹-执行安装命令" class="headerlink" title="下载完服务器压缩包后，解压，然后进入解压后的文件夹 执行安装命令"></a>下载完服务器压缩包后，解压，然后进入解压后的文件夹 执行安装命令</h4><p> 　　对于 linux|darwin <font color="#FF00FF">sudo ./nps install</font><br> 　　对于 windows，管理员身份运行 cmd，进入程序目录 <font color="#FF00FF">nps.exe start</font></p>
-<h4 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h4><p>　　对于 linux|darwin sudo nps start<br>　　对于 windows，管理员身份运行 cmd，进入程序目录 nps.exe start<br>　　安装后windows配置文件位于 C:\Program Files\nps，linux和darwin位于/etc/nps<br>　　停止和重启可用，  <font color="#FF00FF">stop</font> 和  <font color="#FF00FF">restart</font></p>
-<h5 id="如果发现没有启动成功，可以使用-nps-exe-stop，然后运行-nps-exe-运行调试，或查看日志-Windows-日志文件位于当前运行目录下，linux-和-darwin-位于-var-log-nps-log"><a href="#如果发现没有启动成功，可以使用-nps-exe-stop，然后运行-nps-exe-运行调试，或查看日志-Windows-日志文件位于当前运行目录下，linux-和-darwin-位于-var-log-nps-log" class="headerlink" title="如果发现没有启动成功，可以使用 nps(.exe) stop，然后运行 nps.(exe) 运行调试，或查看日志 (Windows 日志文件位于当前运行目录下，linux 和 darwin 位于 /var/log/nps.log)"></a>如果发现没有启动成功，可以使用 nps(.exe) stop，然后运行 nps.(exe) 运行调试，或查看日志 (Windows 日志文件位于当前运行目录下，linux 和 darwin 位于 /var/log/nps.log)</h5><p>　　问服务端 ip:web 服务端口（默认为 8080）<br>　　使用用户名和密码登陆（默认 admin/123，正式使用一定要更改）<br>　　创建客户端</p>
-<h3 id="客户端注册到系统服务-开机启动、守护进程"><a href="#客户端注册到系统服务-开机启动、守护进程" class="headerlink" title="客户端注册到系统服务 (开机启动、守护进程)"></a>客户端注册到系统服务 (开机启动、守护进程)</h3><p>对于 linux、darwin<br>　　注册： <font color="#FF00FF">sudo ./npc install</font>  其他参数（例如-server=xx -vkey=xx或者-config=xxx）<br>　　启动： <font color="#FF00FF">sudo npc start</font><br>　　停止： <font color="#FF00FF">sudo npc stop</font><br>　　如果需要更换命令内容需要先卸载./npc uninstall，再重新注册<br>　　对于 windows，使用管理员身份运行 cmd<br>　　注册： <font color="#FF00FF">npc.exe install </font> 其他参数（例如-server=xx -vkey=xx或者-config=xxx）<br>　　启动： <font color="#FF00FF">npc.exe start</font><br>　　停止： <font color="#FF00FF">npc.exe stop</font><br>　　如果需要更换命令内容需要先卸载 npc.exe uninstall，再重新注册<br>　　如果需要当客户端退出时自动重启客户端，请按照如图所示配置</p>
-<!-- ![1](/temp/NPS服务端跟客户端的配置/1.png) -->
-<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/1.1akygkiad4qo.jpg" alt="图片"><br>注册到服务后，日志文件 windows 位于当前目录下，linux 和 darwin 位于 /var/log/npc.log</p>
-</body></html>]]></content>
-      <categories>
-        <category>内网穿透</category>
-      </categories>
-      <tags>
-        <tag>内网穿透</tag>
-        <tag>NPS</tag>
-        <tag>NPC</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Linux重置密码</title>
     <url>/bc09ee4e.html</url>
     <content><![CDATA[<html><head></head><body><p>1、重启虚拟机，在引导界面按“e”（按鼠标左键，用键盘控制上下），进入类界面，把中间的ro改为</p>
@@ -55,6 +36,25 @@
       <tags>
         <tag>linux</tag>
         <tag>密码</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NPS服务端跟客户端的配置</title>
+    <url>/8284fff5.html</url>
+    <content><![CDATA[<html><head></head><body><h1 id="NPS-服务端跟客户端的配置"><a href="#NPS-服务端跟客户端的配置" class="headerlink" title="NPS 服务端跟客户端的配置"></a>NPS 服务端跟客户端的配置</h1><h2 id="服务端使用"><a href="#服务端使用" class="headerlink" title="服务端使用"></a>服务端使用</h2><h3 id="服务端-linux-darwin-安装"><a href="#服务端-linux-darwin-安装" class="headerlink" title="服务端 linux|darwin 安装"></a>服务端 linux|darwin 安装</h3><h4 id="下载完服务器压缩包后，解压，然后进入解压后的文件夹-执行安装命令"><a href="#下载完服务器压缩包后，解压，然后进入解压后的文件夹-执行安装命令" class="headerlink" title="下载完服务器压缩包后，解压，然后进入解压后的文件夹 执行安装命令"></a>下载完服务器压缩包后，解压，然后进入解压后的文件夹 执行安装命令</h4><p> 　　对于 linux|darwin <font color="#FF00FF">sudo ./nps install</font><br> 　　对于 windows，管理员身份运行 cmd，进入程序目录 <font color="#FF00FF">nps.exe start</font></p>
+<h4 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h4><p>　　对于 linux|darwin sudo nps start<br>　　对于 windows，管理员身份运行 cmd，进入程序目录 nps.exe start<br>　　安装后windows配置文件位于 C:\Program Files\nps，linux和darwin位于/etc/nps<br>　　停止和重启可用，  <font color="#FF00FF">stop</font> 和  <font color="#FF00FF">restart</font></p>
+<h5 id="如果发现没有启动成功，可以使用-nps-exe-stop，然后运行-nps-exe-运行调试，或查看日志-Windows-日志文件位于当前运行目录下，linux-和-darwin-位于-var-log-nps-log"><a href="#如果发现没有启动成功，可以使用-nps-exe-stop，然后运行-nps-exe-运行调试，或查看日志-Windows-日志文件位于当前运行目录下，linux-和-darwin-位于-var-log-nps-log" class="headerlink" title="如果发现没有启动成功，可以使用 nps(.exe) stop，然后运行 nps.(exe) 运行调试，或查看日志 (Windows 日志文件位于当前运行目录下，linux 和 darwin 位于 /var/log/nps.log)"></a>如果发现没有启动成功，可以使用 nps(.exe) stop，然后运行 nps.(exe) 运行调试，或查看日志 (Windows 日志文件位于当前运行目录下，linux 和 darwin 位于 /var/log/nps.log)</h5><p>　　问服务端 ip:web 服务端口（默认为 8080）<br>　　使用用户名和密码登陆（默认 admin/123，正式使用一定要更改）<br>　　创建客户端</p>
+<h3 id="客户端注册到系统服务-开机启动、守护进程"><a href="#客户端注册到系统服务-开机启动、守护进程" class="headerlink" title="客户端注册到系统服务 (开机启动、守护进程)"></a>客户端注册到系统服务 (开机启动、守护进程)</h3><p>对于 linux、darwin<br>　　注册： <font color="#FF00FF">sudo ./npc install</font>  其他参数（例如-server=xx -vkey=xx或者-config=xxx）<br>　　启动： <font color="#FF00FF">sudo npc start</font><br>　　停止： <font color="#FF00FF">sudo npc stop</font><br>　　如果需要更换命令内容需要先卸载./npc uninstall，再重新注册<br>　　对于 windows，使用管理员身份运行 cmd<br>　　注册： <font color="#FF00FF">npc.exe install </font> 其他参数（例如-server=xx -vkey=xx或者-config=xxx）<br>　　启动： <font color="#FF00FF">npc.exe start</font><br>　　停止： <font color="#FF00FF">npc.exe stop</font><br>　　如果需要更换命令内容需要先卸载 npc.exe uninstall，再重新注册<br>　　如果需要当客户端退出时自动重启客户端，请按照如图所示配置</p>
+<!-- ![1](/temp/NPS服务端跟客户端的配置/1.png) -->
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/1.1akygkiad4qo.jpg" alt="图片"><br>注册到服务后，日志文件 windows 位于当前目录下，linux 和 darwin 位于 /var/log/npc.log</p>
+</body></html>]]></content>
+      <categories>
+        <category>内网穿透</category>
+      </categories>
+      <tags>
+        <tag>内网穿透</tag>
+        <tag>NPS</tag>
+        <tag>NPC</tag>
       </tags>
   </entry>
   <entry>
@@ -510,6 +510,98 @@
         <tag>Java</tag>
         <tag>事务</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>给自己配了一台E5洋垃圾</title>
+    <url>/d21321fb.html</url>
+    <content><![CDATA[<html><head></head><body><h1 id="详细配置"><a href="#详细配置" class="headerlink" title="详细配置"></a>详细配置</h1><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>型号</th>
+<th>质保</th>
+<th>价格</th>
+<th>购入渠道</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>CPU</td>
+<td>E5 2666V3 10核20线程</td>
+<td>一年</td>
+<td>39</td>
+<td>淘宝</td>
+</tr>
+<tr>
+<td>主板</td>
+<td>精粤X99M-H D3</td>
+<td>三年</td>
+<td>238</td>
+<td>淘宝</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>三星 DDR3ECC 1866 16G*2</td>
+<td>一年</td>
+<td>80</td>
+<td>淘宝</td>
+</tr>
+<tr>
+<td>硬盘</td>
+<td>已有西数SN550 1TB</td>
+<td>无</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>散热器</td>
+<td>已有利民AX120R SE + 2011扣具</td>
+<td>无</td>
+<td>12</td>
+<td>淘宝(仅扣具)</td>
+</tr>
+<tr>
+<td>电源</td>
+<td>鑫谷AR650捍卫者+黑色 额定650W电源 白牌</td>
+<td>三年+两年店保</td>
+<td>248</td>
+<td>淘宝</td>
+</tr>
+<tr>
+<td>显卡</td>
+<td>迪兰RX580 8G 2304SP 战神</td>
+<td>两年</td>
+<td>331</td>
+<td>淘宝</td>
+</tr>
+<tr>
+<td>机箱</td>
+<td>长城阿基米德KM9Pro机箱 白</td>
+<td>无</td>
+<td>60</td>
+<td>闲鱼同城</td>
+</tr>
+<tr>
+<td>合计</td>
+<td></td>
+<td></td>
+<td>1008</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id="订单截图"><a href="#订单截图" class="headerlink" title="订单截图"></a>订单截图</h1><h2 id="新购"><a href="#新购" class="headerlink" title="新购"></a>新购</h2><h3 id="CPU"><a href="#CPU" class="headerlink" title="CPU"></a>CPU</h3><p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240131152614.6p5l2q3qre0.jpg"></p>
+<h3 id="主板"><a href="#主板" class="headerlink" title="主板"></a>主板</h3><p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240131152647.17sx1idac9b4.jpg"></p>
+<h3 id="内存"><a href="#内存" class="headerlink" title="内存"></a>内存</h3><p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240131152642.jrf3btx338w.jpg"></p>
+<h3 id="显卡"><a href="#显卡" class="headerlink" title="显卡"></a>显卡</h3><p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240131152631.6agn0ozmpr80.jpg"></p>
+<h3 id="电源"><a href="#电源" class="headerlink" title="电源"></a>电源</h3><p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240129081240.4gbkzem23bq0.jpg"></p>
+<h2 id="已有"><a href="#已有" class="headerlink" title="已有"></a>已有</h2><h3 id="硬盘"><a href="#硬盘" class="headerlink" title="硬盘"></a>硬盘</h3><p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240131153134.4fvj72y7rp80.jpg"></p>
+<h3 id="散热器"><a href="#散热器" class="headerlink" title="散热器"></a>散热器</h3><p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240131153141.3pvqbtozunu0.jpg"></p>
+<h1 id="装机"><a href="#装机" class="headerlink" title="装机"></a>装机</h1><p>待更新…</p>
+<h1 id="性能测试"><a href="#性能测试" class="headerlink" title="性能测试"></a>性能测试</h1><h2 id="未鸡血"><a href="#未鸡血" class="headerlink" title="未鸡血"></a>未鸡血</h2><h3 id="鲁大师跑分"><a href="#鲁大师跑分" class="headerlink" title="鲁大师跑分"></a>鲁大师跑分</h3><p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240126145559.2myl6s5t23o0.jpg"></p>
+<h3 id="CPU-Z跑分"><a href="#CPU-Z跑分" class="headerlink" title="CPU-Z跑分"></a>CPU-Z跑分</h3><p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240126145550.5x3xrulu64w0.jpg"></p>
+<h3 id="单烤FPU功耗"><a href="#单烤FPU功耗" class="headerlink" title="单烤FPU功耗"></a>单烤FPU功耗</h3><p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240129081612.6zmer3l7phk0.jpg"></p>
+<h3 id="双烤功耗"><a href="#双烤功耗" class="headerlink" title="双烤功耗"></a>双烤功耗</h3><p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240129081612.6zmer3l7phk0.jpg"></p>
+<h2 id="鸡血"><a href="#鸡血" class="headerlink" title="鸡血"></a>鸡血</h2><p>待更新…</p>
+</body></html>]]></content>
   </entry>
   <entry>
     <title>通过ikuai搭建openVPN实现异地组网</title>
