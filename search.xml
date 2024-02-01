@@ -355,28 +355,6 @@
       </tags>
   </entry>
   <entry>
-    <title>zabbix自定义监控项</title>
-    <url>/9ccde0e4.html</url>
-    <content><![CDATA[<html><head></head><body><p>在zabbixAgent服务端是修改配置文件</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line"># vi /etc/zabbix zabbix_agentd.conf</span><br><span class="line">333 UnsafeUserParameters=1</span><br><span class="line"></span><br><span class="line">在文件最下面添加自定义监控项</span><br><span class="line"></span><br><span class="line">//监控内存   Mem_pre是键值，后面的是执行的命令也可以是脚本</span><br><span class="line">serParameter=Mem_pre,echo  $(free | awk '/Mem/{printf("%.2f"), $3/$2*100}')</span><br></pre></td></tr></tbody></table></figure>
-
-<p>重启zabbixAgent服务</p>
-<p>zabbixweb端配置监控项</p>
-<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/2e4e49bbc2570c5f6af3cac3021126d1_image_20231122150911A057.56pd75fqkks0.jpg" alt="图片"></p>
-<p>创建图形</p>
-<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/fdcfe376b37c15e1fdca8073cf0ab41f_image_20231122150949A058.57otailtbqk0.jpg" alt="图片"></p>
-<p>查看监控图形</p>
-<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/8892163b0ce1338a5090cf83ac113cc9_image_20231122151023A059.4f2z8bwz3nc0.jpg" alt="图片"></p>
-</body></html>]]></content>
-      <categories>
-        <category>Zabbix</category>
-      </categories>
-      <tags>
-        <tag>zabbix</tag>
-        <tag>监控项</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>zabbix配置触发器</title>
     <url>/863a3196.html</url>
     <content><![CDATA[<html><head></head><body><p>创建触发器</p>
@@ -595,13 +573,38 @@
 <h3 id="电源"><a href="#电源" class="headerlink" title="电源"></a>电源</h3><p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240129081240.4gbkzem23bq0.jpg"></p>
 <h2 id="已有"><a href="#已有" class="headerlink" title="已有"></a>已有</h2><h3 id="硬盘"><a href="#硬盘" class="headerlink" title="硬盘"></a>硬盘</h3><p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240131153134.4fvj72y7rp80.jpg"></p>
 <h3 id="散热器"><a href="#散热器" class="headerlink" title="散热器"></a>散热器</h3><p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240131153141.3pvqbtozunu0.jpg"></p>
-<h1 id="装机"><a href="#装机" class="headerlink" title="装机"></a>装机</h1><p>待更新…</p>
+<h1 id="装机"><a href="#装机" class="headerlink" title="装机"></a>装机</h1><p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240201102713.nr6cz9ozp6o.jpg"></p>
 <h1 id="性能测试"><a href="#性能测试" class="headerlink" title="性能测试"></a>性能测试</h1><h2 id="未鸡血"><a href="#未鸡血" class="headerlink" title="未鸡血"></a>未鸡血</h2><h3 id="鲁大师跑分"><a href="#鲁大师跑分" class="headerlink" title="鲁大师跑分"></a>鲁大师跑分</h3><p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240126145559.2myl6s5t23o0.jpg"></p>
 <h3 id="CPU-Z跑分"><a href="#CPU-Z跑分" class="headerlink" title="CPU-Z跑分"></a>CPU-Z跑分</h3><p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240126145550.5x3xrulu64w0.jpg"></p>
 <h3 id="单烤FPU功耗"><a href="#单烤FPU功耗" class="headerlink" title="单烤FPU功耗"></a>单烤FPU功耗</h3><p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240129081612.6zmer3l7phk0.jpg"></p>
-<h3 id="双烤功耗"><a href="#双烤功耗" class="headerlink" title="双烤功耗"></a>双烤功耗</h3><p><img src="https://cdn.jsdelivr.net/gh/ityinp/hexoBlog-images@main/root/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240129081558.2kq1mc1eedy0.jpg"></p>
-<h2 id="鸡血"><a href="#鸡血" class="headerlink" title="鸡血"></a>鸡血</h2><p>待更新…</p>
+<h3 id="双烤功耗"><a href="#双烤功耗" class="headerlink" title="双烤功耗"></a>双烤功耗</h3><p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240129081558.2kq1mc1eedy0.jpg"></p>
+<h2 id="鸡血"><a href="#鸡血" class="headerlink" title="鸡血"></a>鸡血</h2><h3 id="鲁大师跑分-1"><a href="#鲁大师跑分-1" class="headerlink" title="鲁大师跑分"></a>鲁大师跑分</h3><p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240201102717.1qfy786y7vpc.jpg"></p>
+<h3 id="CPU-Z跑分-1"><a href="#CPU-Z跑分-1" class="headerlink" title="CPU-Z跑分"></a>CPU-Z跑分</h3><p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240201102720.jgopwrwsbpc.jpg"></p>
+<h3 id="单烤FPU功耗-1"><a href="#单烤FPU功耗-1" class="headerlink" title="单烤FPU功耗"></a>单烤FPU功耗</h3><p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240201102723.6sz1krslmtw0.jpg"></p>
+<h3 id="双烤功耗-1"><a href="#双烤功耗-1" class="headerlink" title="双烤功耗"></a>双烤功耗</h3><p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240201102727.1ex0tfg0ry9s.jpg"></p>
 </body></html>]]></content>
+  </entry>
+  <entry>
+    <title>zabbix自定义监控项</title>
+    <url>/9ccde0e4.html</url>
+    <content><![CDATA[<html><head></head><body><p>在zabbixAgent服务端是修改配置文件</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line"># vi /etc/zabbix zabbix_agentd.conf</span><br><span class="line">333 UnsafeUserParameters=1</span><br><span class="line"></span><br><span class="line">在文件最下面添加自定义监控项</span><br><span class="line"></span><br><span class="line">//监控内存   Mem_pre是键值，后面的是执行的命令也可以是脚本</span><br><span class="line">serParameter=Mem_pre,echo  $(free | awk '/Mem/{printf("%.2f"), $3/$2*100}')</span><br></pre></td></tr></tbody></table></figure>
+
+<p>重启zabbixAgent服务</p>
+<p>zabbixweb端配置监控项</p>
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/2e4e49bbc2570c5f6af3cac3021126d1_image_20231122150911A057.56pd75fqkks0.jpg" alt="图片"></p>
+<p>创建图形</p>
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/fdcfe376b37c15e1fdca8073cf0ab41f_image_20231122150949A058.57otailtbqk0.jpg" alt="图片"></p>
+<p>查看监控图形</p>
+<p><img src="https://jsd.cdn.zzko.cn/gh/ityinp/hexoBlog-images@main/root/8892163b0ce1338a5090cf83ac113cc9_image_20231122151023A059.4f2z8bwz3nc0.jpg" alt="图片"></p>
+</body></html>]]></content>
+      <categories>
+        <category>Zabbix</category>
+      </categories>
+      <tags>
+        <tag>zabbix</tag>
+        <tag>监控项</tag>
+      </tags>
   </entry>
   <entry>
     <title>通过ikuai搭建openVPN实现异地组网</title>
