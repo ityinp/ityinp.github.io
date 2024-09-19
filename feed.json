@@ -1,0 +1,13 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Yin Peng的小站",
+    "description": "",
+    "home_page_url": "https://ityinp.github.io",
+    "feed_url": "https://ityinp.github.io/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Yin Peng"
+    },
+    "items": [
+    ]
+}
